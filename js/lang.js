@@ -20,9 +20,9 @@ const translations = {
       "Cada detalhe — dos móveis antigos, soalhos, objetos decorativos e antiguidades inigualáveis, aos tecidos de qualidade excelente, ao conforto da cama — foi pensado para oferecer uma experiência sensorial e emocional, onde a história encontra o conforto contemporâneo.",
     essenceQuote:
       '"Um refúgio onde o passado sussurra histórias e o presente convida ao descanso."',
-      essenceIcon1: "Um lar com alma antiga e detalhes que contam histórias.",
-      essenceIcon2: "Onde cada momento inspira calma e encanto.",
-      essenceIcon3: "Harmonia natural com todas as comodidades modernas.",
+    essenceIcon1: "Um lar com alma antiga e detalhes que contam histórias.",
+    essenceIcon2: "Onde cada momento inspira calma e encanto.",
+    essenceIcon3: "Harmonia natural com todas as comodidades modernas.",
     experiencesTitle: "Momentos para recordar",
     experiencesText:
       "Da descoberta da região às atividades ao ar livre, criamos experiências pensadas para quem valoriza tranquilidade, natureza e boa gastronomia.",
@@ -63,9 +63,9 @@ const translations = {
       "Every detail — from the antique furniture, floors, decorative objects and unparalleled antiques, to the high-quality fabrics and the comfort of the bed — has been designed to offer a sensory and emotional experience, where history meets contemporary comfort.",
     essenceQuote:
       '"A refuge where the past whispers stories and the present invites you to rest."',
-      essenceIcon1: "A home with an old soul and details that tell stories.",
-      essenceIcon2: "Where every moment inspires calm and charm.",
-      essenceIcon3: "Natural harmony with all modern amenities.",
+    essenceIcon1: "A home with an old soul and details that tell stories.",
+    essenceIcon2: "Where every moment inspires calm and charm.",
+    essenceIcon3: "Natural harmony with all modern amenities.",
     experiencesTitle: "Moments to remember",
     experiencesText:
       "From exploring the region to outdoor activities, we create experiences for those who value tranquility, nature and good gastronomy.",
