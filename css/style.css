@@ -1,0 +1,526 @@
+:root {
+  --gold: #cea052;
+  --bg: #faf7f1;
+  --dark: #111;
+  --text: #222;
+  --light: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+/* --- TOPBAR --- */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+  background: transparent;
+}
+
+.topbar.scrolled {
+  background: #faf8f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: min(1300px, 95%);
+  margin: 0 auto;
+  min-height: 72px;
+  padding-left: 60px; /* move o logo mais para a esquerda */
+  column-gap: 2.5rem; /* espaço entre o menu e o botão de reserva */
+}
+
+/* LOGO */
+.logo {
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.5rem; /* espaçamento equilibrado */
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+/* BOTÃO + SWITCH DE IDIOMA */
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-self: end; /* garante que fica mesmo à direita */
+}
+
+.btn-small {
+  background: #5a6350;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+/* ESTADO INICIAL (TOPO TRANSPARENTE) */
+.topbar:not(.scrolled) .logo,
+.topbar:not(.scrolled) nav a,
+.topbar:not(.scrolled) .lang-switch span,
+.topbar:not(.scrolled) .lang-switch button {
+  color: #ffffff;
+}
+
+.topbar:not(.scrolled) .btn-small {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ESTADO COM FUNDO */
+.topbar.scrolled .logo,
+.topbar.scrolled nav a,
+.topbar.scrolled .lang-switch button {
+  color: #5a6350;
+}
+
+.topbar.scrolled .btn-small {
+  background: #5a6350;
+  color: #ffffff;
+}
+
+/* --- HERO COM VÍDEO DE FUNDO --- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* vídeo */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que preenche o ecrã todo */
+  z-index: 0;
+}
+
+/* overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+/* conteúdo */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  max-width: 680px;
+  padding: 0 20px;
+}
+
+.hero-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 4.2rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .btn-primary,
+.hero .btn-secondary {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary {
+  background: #5a6350;
+  color: #fff;
+}
+
+.hero .btn-secondary {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Sections */
+.section {
+  padding: 5.5rem 0;
+}
+
+.section-light {
+  background: #fff;
+}
+
+.section-dark {
+  background: #171717;
+}
+
+.section .section-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 0.78rem;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+}
+
+.section-title.light {
+  color: #fff;
+}
+
+.section-text {
+  max-width: 680px;
+  line-height: 1.7;
+  color: #4b4b4b;
+}
+
+.section-text.light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.narrow {
+  text-align: center;
+}
+
+.section-image-left .split {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.split-text {
+  flex: 1;
+}
+
+.split-media {
+  flex: 1;
+}
+
+.placeholder-img {
+  background: rgba(206, 160, 82, 0.3);
+  border: 1px dashed rgba(206, 160, 82, 0.6);
+  border-radius: 12px;
+  min-height: 240px;
+}
+
+/* --- ESSÊNCIA --- */
+.essencia-section {
+  background: #faf8f4;
+  padding: 9rem 0;
+  scroll-margin-top: -50px;
+  font-family: "Crimson Pro", serif;;
+}
+
+.essencia-container {
+  width: min(1150px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.essencia-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 5px;
+}
+
+.essencia-img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.essencia-gallery img {
+  max-height: calc(50vh - 10px); /* garante que cabem mesmo num ecrã 1080p */
+}
+
+/* Coluna de texto */
+.essencia-text {
+  color: #5a6350;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.essencia-title {
+  color: #c7a045;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.essencia-text p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: #A19898;
+}
+
+.essencia-quote {
+  font-style: italic;
+  color: #5A6350;
+  margin: 1.5rem 0 2rem;
+}
+
+#essencia-quote {
+  font-style: italic;
+  color: #5A6350;
+  margin: 1.5rem 0 2rem;
+}
+
+/* Ícones */
+.essencia-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #A19898;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.icon-item img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.75;
+  background-color: #c4c1c1;
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.icon-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #A19898;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .essencia-container {
+    grid-template-columns: 1fr;
+  }
+  .essencia-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Rooms */
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.room-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+}
+
+.room-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.room-title {
+  margin: 1.2rem 1.2rem 0.3rem;
+  font-size: 1.1rem;
+}
+
+.room-meta {
+  margin: 0 1.2rem 1.2rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 540px;
+  width: 92%;
+  padding: 2.5rem 2.5rem 2rem;
+  position: relative;
+  text-align: left;
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.modal-btn {
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 2.8rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Simple pages */
+.simple-page .simple-main {
+  margin-top: 90px;
+  width: min(700px, 90%);
+  margin-inline: auto;
+  padding-bottom: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .nav nav {
+    display: none; /* para simplificar — podes fazer menu burguer depois */
+  }
+  .hero {
+    text-align: left;
+  }
+  .section-image-left .split {
+    flex-direction: column;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modal-content {
+    padding: 1.8rem 1.4rem 1.6rem;
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa do Fontão</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Podes trocar estas fonts pelas do Figma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo" data-i18n="logo">Casa do Fontão</div>
+        <nav>
+          <a href="#essencia" data-i18n="home">A casa</a>
+          <a href="#experiencias" data-i18n="experiences">Experiências</a>
+          <a href="#eventos" data-i18n="events">Eventos</a>
+          <a href="#galeria" data-i18n="gallery">Galeria</a>
+          <a href="#contactos" data-i18n="contact">Contactos</a>
+        </nav>
+        <div class="right-actions">
+          <a href="#" class="btn-small" data-i18n="bookNow">Reservar</a>
+          <div class="lang-switch">
+            <button id="lang-pt">PT</button>
+            <span>|</span>
+            <button id="lang-en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <!-- Vídeo de fundo -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="media/video_hero.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Conteúdo -->
+      <div class="hero-content">
+        <h1 class="hero-title">Casa do Fontão</h1>
+        <p class="hero-text" data-i18n="welcomeText">
+          Um retiro de charme onde tradição e conforto se encontram.
+        </p>
+      </div>
+    </section>
+
+    <!-- ESSÊNCIA -->
+    <section id="essencia" class="essencia-section">
+      <div class="essencia-container">
+        <!-- Coluna esquerda: Fotos -->
+        <div class="essencia-gallery">
+          <img
+            src="media/images/essencia-1.jpg"
+            alt="Sala de leitura"
+            class="essencia-img"
+          />
+          <img
+            src="media/images/essencia-2.jpg"
+            alt="Casa de banho"
+            class="essencia-img"
+          />
+          <img src="media/images/essencia-3.jpg" alt="Quarto" class="essencia-img" />
+          <img
+            src="media/images/essencia-4.jpg"
+            alt="Vista exterior"
+            class="essencia-img"
+          />
+        </div>
+
+        <!-- Coluna direita: Texto -->
+        <div class="essencia-text">
+          <h2 class="essencia-title" data-i18n="essenceTitle">A Essência</h2>
+          <p data-i18n="essenceText1">
+            A Casa do Fontão é uma Casa Histórica com arquitetura do século
+            XVIII — uma casa de charme, onde o tempo parece abrandar.
+          </p>
+          <p data-i18n="essenceText2">
+            Cada detalhe — dos móveis antigos, soalhos, objetos decorativos e
+            antiguidades inigualáveis, aos tecidos de qualidade excelente, ao
+            conforto da cama — foi pensado para oferecer uma experiência
+            sensorial e emocional, onde a história encontra o conforto
+            contemporâneo.
+          </p>
+          <p class="essencia-quote" id="essencia-quote" data-i18n="essenceQuote">
+            "Um refúgio onde o passado sussurra histórias e o presente convida
+            ao descanso."
+          </p>
+
+          <div class="essencia-icons">
+            <div class="icon-item">
+              <img src="media/icons/house.svg" alt="" />
+              <p data-i18n="essenceIcon1">
+                Um lar com alma antiga e detalhes que contam histórias.
+              </p>
+            </div>
+            <div class="icon-item">
+              <img src="media/icons/map-trifold.svg" alt="" />
+              <p data-i18n="essenceIcon2">
+                Onde cada momento inspira calma e encanto.
+              </p>
+            </div>
+            <div class="icon-item">
+              <img src="media/icons/sun.svg" alt="" />
+              <p data-i18n="essenceIcon3">
+                Harmonia natural com todas as comodidades modernas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIAS -->
+    <section id="experiencias" class="section section-image-left">
+      <div class="container split">
+        <div class="split-text">
+          <p class="section-tag" data-i18n="experiences">Experiências</p>
+          <h2 class="section-title" data-i18n="experiencesTitle">
+            Momentos para recordar
+          </h2>
+          <p class="section-text" data-i18n="experiencesText">
+            Da descoberta da região às atividades ao ar livre, criamos
+            experiências pensadas para quem valoriza tranquilidade, natureza e
+            boa gastronomia.
+          </p>
+        </div>
+        <div class="split-media">
+          <div class="placeholder-img">Imagem/galeria</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUARTOS -->
+    <section id="quartos" class="section section-light">
+      <div class="container">
+        <p class="section-tag" data-i18n="rooms">Quartos</p>
+        <h2 class="section-title" data-i18n="roomsTitle">
+          Conforto em cada detalhe
+        </h2>
+        <p class="section-text" data-i18n="roomsIntro">
+          Cada quarto foi pensado para oferecer privacidade, conforto e
+          referências à história da casa.
+        </p>
+
+        <div class="room-grid">
+          <article class="room-card" data-room="1">
+            <div class="room-img placeholder-img"></div>
+            <h3 class="room-title" data-i18n="room1Title">Quarto Superior</h3>
+            <p class="room-meta" data-i18n="room1Meta">
+              Cama de casal • Vista jardim
+            </p>
+          </article>
+          <article class="room-card" data-room="2">
+            <div class="room-img placeholder-img"></div>
+            <h3 class="room-title" data-i18n="room2Title">Quarto Familiar</h3>
+            <p class="room-meta" data-i18n="room2Meta">Até 4 hóspedes</p>
+          </article>
+          <article class="room-card" data-room="3">
+            <div class="room-img placeholder-img"></div>
+            <h3 class="room-title" data-i18n="room3Title">Suite Rústica</h3>
+            <p class="room-meta" data-i18n="room3Meta">Ambiente rústico</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL DE QUARTO -->
+    <div id="room-modal" class="modal hidden">
+      <div class="modal-content">
+        <button id="close-modal" class="close-btn">&times;</button>
+        <h2 id="modal-title">Quarto</h2>
+        <p id="modal-description">Descrição do quarto selecionado.</p>
+        <a href="#" class="btn-primary modal-btn" data-i18n="bookNow"
+          >Reservar</a
+        >
+      </div>
+    </div>
+
+    <!-- SALA DE EVENTOS -->
+    <section id="eventos" class="section section-dark">
+      <div class="container narrow">
+        <p class="section-tag" data-i18n="eventsRoom">Sala de Eventos</p>
+        <h2 class="section-title light" data-i18n="eventsTitle">
+          Um espaço para celebrações
+        </h2>
+        <p class="section-text light" data-i18n="eventsText">
+          Ideal para pequenos eventos, reuniões familiares ou experiências
+          gastronómicas privadas.
+        </p>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="section section-light">
+      <div class="container narrow">
+        <p class="section-tag" data-i18n="history">História</p>
+        <h2 class="section-title" data-i18n="historyTitle">
+          A história da Casa
+        </h2>
+        <p class="section-text" data-i18n="historyText">
+          Com origens no século XIX, a Casa do Fontão mantém a traça original,
+          combinando elementos de pedra, madeira e peças tradicionais, agora
+          adaptadas ao conforto atual.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2025 Casa do Fontão</p>
+        <p><a href="contactos.html" data-i18n="contact">Contactos</a></p>
+      </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
