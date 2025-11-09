@@ -11,8 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header class="topbar">
       <div class="container nav">
@@ -22,10 +26,16 @@
           <a href="#experiencias" data-i18n="experiences">Experiências</a>
           <a href="#eventos" data-i18n="events">Eventos</a>
           <a href="#galeria" data-i18n="gallery">Galeria</a>
-          <a href="#contactos" data-i18n="contact">Contactos</a>
+          <a href="contactos.html" data-i18n="contact">Contactos</a>
         </nav>
         <div class="right-actions">
-          <a href="https://booking.roomraccoon.pt/casadofontao/pt" target="_blank" class="btn-small" data-i18n="bookNow">Reservar</a>
+          <a
+            href="https://booking.roomraccoon.pt/casadofontao/pt"
+            target="_blank"
+            class="btn-small"
+            data-i18n="bookNow"
+            >Reservar</a
+          >
           <div class="lang-switch">
             <button id="lang-pt">PT</button>
             <span>|</span>
@@ -69,7 +79,11 @@
             alt="Casa de banho"
             class="essencia-img"
           />
-          <img src="media/images/essencia-3.jpg" alt="Quarto" class="essencia-img" />
+          <img
+            src="media/images/essencia-3.jpg"
+            alt="Quarto"
+            class="essencia-img"
+          />
           <img
             src="media/images/essencia-4.jpg"
             alt="Vista exterior"
@@ -91,7 +105,11 @@
             sensorial e emocional, onde a história encontra o conforto
             contemporâneo.
           </p>
-          <p class="essencia-quote" id="essencia-quote" data-i18n="essenceQuote">
+          <p
+            class="essencia-quote"
+            id="essencia-quote"
+            data-i18n="essenceQuote"
+          >
             "Um refúgio onde o passado sussurra histórias e o presente convida
             ao descanso."
           </p>
@@ -121,21 +139,129 @@
     </section>
 
     <!-- EXPERIÊNCIAS -->
-    <section id="experiencias" class="section section-image-left">
-      <div class="container split">
-        <div class="split-text">
-          <p class="section-tag" data-i18n="experiences">Experiências</p>
-          <h2 class="section-title" data-i18n="experiencesTitle">
-            Momentos para recordar
+    <section id="experiencias" class="experiencias-section">
+      <div class="container-experiencias">
+        <div class="experiencias-header">
+          <h2 class="experiencias-title" data-i18n="experiencesTitle">
+            Experiências
           </h2>
-          <p class="section-text" data-i18n="experiencesText">
-            Da descoberta da região às atividades ao ar livre, criamos
-            experiências pensadas para quem valoriza tranquilidade, natureza e
-            boa gastronomia.
+          <p class="experiencias-subtitle" data-i18n="experiencesText">
+            Viva Momentos Únicos
           </p>
         </div>
-        <div class="split-media">
-          <div class="placeholder-img">Imagem/galeria</div>
+
+        <!-- EXPERIÊNCIA 1 -->
+        <div class="experiencia-item">
+          <div class="experiencia-media">
+            <img
+              src="media/images/experiencia-1.jpg"
+              alt="Experiências Gastronómicas"
+            />
+            <div class="exp-num">01</div>
+          </div>
+          <div class="experiencia-content">
+            <p class="exp-tag">
+              <img src="media/icons/fork-knife.svg" alt="" class="exp-icon" />
+              <span data-i18n="experience1Type">Sabores com Alma</span>
+            </p>
+
+            <h3 class="exp-title" data-i18n="experience1Title">
+              Experiências Gastronómicas
+            </h3>
+            <p class="exp-text" data-i18n="experience1Text">
+              Jantares intimistas à luz de velas, onde cada prato conta uma
+              história. Ingredientes locais transformados em memórias que se
+              saboreiam lentamente.
+            </p>
+            <p class="exp-quote" data-i18n="experience1Quote">
+              A mesa como palco de momentos.
+            </p>
+          </div>
+        </div>
+
+        <!-- EXPERIÊNCIA 2 -->
+        <div class="experiencia-item reverse">
+          <div class="experiencia-media">
+            <img
+              src="media/images/experiencia-2.jpg"
+              alt="Passeios na Natureza"
+            />
+            <div class="exp-num">02</div>
+          </div>
+          <div class="experiencia-content">
+            <p class="exp-tag">
+              <img src="media/icons/tree.svg" alt="" class="exp-icon" />
+              <span data-i18n="experience2Type">Entre o Bosque e o Rio</span>
+            </p>
+
+            <h3 class="exp-title" data-i18n="experience2Title">
+              Passeios na Natureza
+            </h3>
+            <p class="exp-text" data-i18n="experience2Text">
+              O bosque em frente à casa convida a perder-se entre aromas e
+              serenidade. Descubra trilhos secretos e recantos de contemplação
+              pura.
+            </p>
+            <p class="exp-quote" data-i18n="experience2Quote">
+              Onde o tempo se mede em respirações.
+            </p>
+          </div>
+        </div>
+
+        <!-- EXPERIÊNCIA 3 -->
+        <div class="experiencia-item">
+          <div class="experiencia-media">
+            <img
+              src="media/images/experiencia-3.jpg"
+              alt="Experiências Culturais"
+            />
+            <div class="exp-num">03</div>
+          </div>
+          <div class="experiencia-content">
+            <p class="exp-tag">
+              <img src="media/icons/book-open.svg" alt="" class="exp-icon" />
+              <span data-i18n="experience3Type">Património de Amarante</span>
+            </p>
+
+            <h3 class="exp-title" data-i18n="experience3Title">
+              Experiências Culturais
+            </h3>
+            <p class="exp-text" data-i18n="experience3Text">
+              Descubra a história e a arte local em visitas guiadas por
+              monumentos e tradições que marcam a essência da região.
+            </p>
+            <p class="exp-quote" data-i18n="experience3Quote">
+              Na jornada de quem aqui esteve.
+            </p>
+          </div>
+        </div>
+
+        <!-- EXPERIÊNCIA 4 -->
+        <div class="experiencia-item reverse">
+          <div class="experiencia-media">
+            <img
+              src="media/images/experiencia-4.jpg"
+              alt="Degustação de Vinhos"
+            />
+            <div class="exp-num">04</div>
+          </div>
+          <div class="experiencia-content">
+            <p class="exp-tag">
+              <img src="media/icons/wine.svg" alt="" class="exp-icon" />
+              <span data-i18n="experience4Type">Néctares do Douro</span>
+            </p>
+            <h3 class="exp-title" data-i18n="experience4Title">
+              Degustação de Vinhos
+            </h3>
+            <p class="exp-text" data-i18n="experience4Text">
+              Uma viagem sensorial pelos vinhos da região, harmonizados com
+              iguarias artesanais. Cada gole é um elogio à tradição vínica
+              portuguesa.
+            </p>
+            <p class="exp-quote" data-i18n="experience4Quote">
+              O sabor de sermos onde a calma vive.
+            </p>
+          </div>
         </div>
       </div>
     </section>

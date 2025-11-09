@@ -5,26 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactos — Casa do Fontão</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Crimson+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="simple-page">
+  <body class="contactos-page">
     <header class="topbar">
       <div class="container nav">
-        <div class="logo">Casa do Fontão</div>
+        <div class="logo" data-i18n="logo">Casa do Fontão</div>
         <nav>
-          <a href="index.html#essencia">Essência</a>
-          <a href="index.html#quartos">Quartos</a>
-          <a href="index.html#historia">História</a>
+          <a href="index.html" data-i18n="home">A casa</a>
+          <a href="index.html#experiencias" data-i18n="experiences"
+            >Experiências</a
+          >
+          <a href="index.html#eventos" data-i18n="events">Eventos</a>
+          <a href="index.html#galeria" data-i18n="gallery">Galeria</a>
         </nav>
+        <div class="right-actions">
+          <a
+            href="https://booking.roomraccoon.pt/casadofontao/pt"
+            target="_blank"
+            class="btn-small"
+            data-i18n="bookNow"
+            >Reservar</a
+          >
+          <div class="lang-switch">
+            <button id="lang-pt">PT</button>
+            <span>|</span>
+            <button id="lang-en">EN</button>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main class="simple-main">
-      <h1>Contactos</h1>
-      <p>
-        Email: <a href="mailto:info@casadofontao.pt">info@casadofontao.pt</a>
-      </p>
-      <p>Telefone: +351 912 345 678</p>
-      <p>Localização: Casa do Fontão, Portugal</p>
+    <main class="contactos-section">
+      <div class="contactos-container">
+        <!-- COLUNA ESQUERDA -->
+        <div class="contactos-left">
+          <!-- Caixa de Contactos -->
+          <div class="contactos-info card">
+            <div class="contact-item">
+              <img src="media/icons/map-pin.svg" alt="" class="contact-icon" />
+              <div>
+                <h3 data-i18n="contactsLocation">Localização</h3>
+                <p>Rua XXX<br />4600 - XXX Amarante<br />Portugal</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img src="media/icons/phone.svg" alt="" class="contact-icon" />
+              <div>
+                <h3 data-i18n="contactsPhone">Telefone</h3>
+                <p>+351 912 345 678<br />WhatsApp disponível</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <img src="media/icons/envelope.svg" alt="" class="contact-icon" />
+              <div>
+                <h3 data-i18n="contactsEmail">Email</h3>
+                <p>info@casadofontao.pt</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Caixa de Redes Sociais -->
+          <div class="contactos-social card">
+            <h3 data-i18n="contactsFollowUs">Siga-nos nas redes sociais</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <img src="media/icons/facebook-logo.svg" alt="Facebook" />
+              </a>
+              <a href="#" class="social-icon">
+                <img src="media/icons/instagram-logo.svg" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNA DIREITA (MAPA) -->
+        <div class="contactos-map card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.6461262445564!2d-8.06284338795646!3d41.273040302959906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24bedbb7e6160d%3A0xfab9e17604a770f5!2sCasa%20do%20Font%C3%A3o!5e0!3m2!1spt-PT!2slu!4v1762644961398!5m2!1spt-PT!2slu"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </main>
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -305,7 +305,7 @@ nav a {
   background: #faf8f4;
   padding: 9rem 0;
   scroll-margin-top: -50px;
-  font-family: "Crimson Pro", serif;;
+  font-family: "Crimson Pro", serif;
 }
 
 .essencia-container {
@@ -351,18 +351,18 @@ nav a {
   line-height: 1.7;
   margin-bottom: 1.2rem;
   font-size: 1.05rem;
-  color: #A19898;
+  color: #a19898;
 }
 
 .essencia-quote {
   font-style: italic;
-  color: #5A6350;
+  color: #5a6350;
   margin: 1.5rem 0 2rem;
 }
 
 #essencia-quote {
   font-style: italic;
-  color: #5A6350;
+  color: #5a6350;
   margin: 1.5rem 0 2rem;
 }
 
@@ -371,7 +371,7 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  color: #A19898;
+  color: #a19898;
 }
 
 .icon-item {
@@ -393,7 +393,7 @@ nav a {
 .icon-item p {
   margin: 0;
   font-size: 1rem;
-  color: #A19898;
+  color: #a19898;
 }
 
 /* Responsivo */
@@ -403,6 +403,142 @@ nav a {
   }
   .essencia-gallery {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- EXPERIÊNCIAS --- */
+.experiencias-section {
+  background: #faf8f4;
+  padding: 8rem 0;
+  font-family: "Crimson Pro", serif;
+}
+
+.container-experiencias {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.experiencias-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.experiencias-title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5a6350;
+  margin-bottom: 0.5rem;
+}
+
+.experiencias-subtitle {
+  font-size: 1.1rem;
+  color: #c7a045;
+  letter-spacing: 0.04em;
+}
+
+/* Bloco */
+.experiencia-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.experiencia-item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Imagem */
+.experiencia-media {
+  position: relative;
+  flex: 1;
+}
+
+.experiencia-media img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Número */
+.exp-num {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #c7a045;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Conteúdo */
+.experiencia-content {
+  flex: 1;
+}
+
+.exp-tag {
+  display: flex; /* garante alinhamento vertical */
+  align-items: center;
+  gap: 0.6rem; /* espaço entre o ícone e o texto */
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #c7a045;
+  margin-bottom: 0.8rem;
+}
+
+.exp-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.75;
+  background-color: rgba(122, 132, 104, 0.1);
+  padding: 6px;
+  border-radius: 10px;
+  display: flex; /* centra o ícone dentro do quadrado */
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-title {
+  font-size: 1.8rem;
+  color: #5a6350;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.exp-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #ababab;
+  margin-bottom: 1.2rem;
+}
+
+.exp-quote {
+  font-style: italic;
+  color: #5a6350;
+  margin: 1.5rem 0 2rem;
+  border-left: 2px solid #c7a045;
+  padding-left: 12px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .experiencia-item,
+  .experiencia-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experiencia-content {
+    margin-top: 1.5rem;
   }
 }
 
@@ -522,5 +658,173 @@ nav a {
   }
   .modal-content {
     padding: 1.8rem 1.4rem 1.6rem;
+  }
+}
+
+/* --- CONTACTOS SPLIT PAGE --- */
+.contactos-section {
+  background: #faf8f4;
+  padding: 8rem 0;
+  font-family: "Crimson Pro", serif;
+  color: #5a6350;
+}
+
+.contactos-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* COLUNA ESQUERDA */
+.contactos-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* CARTÕES */
+.card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem 2rem;
+}
+
+/* Contact Info */
+.contact-item {
+  display: flex;
+  align-items: center; /* centra verticalmente ícone e texto */
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Ícone com círculo perfeito */
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  background: #e7e6e3;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* impede que o ícone encolha */
+  box-sizing: border-box;
+}
+
+.contact-icon img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+/* Texto ao lado */
+.contact-item h3 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-item p {
+  font-family: "Crimson Pro", serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Caixa Social */
+/* --- Caixa Social --- */
+.contactos-social {
+  display: flex;
+  flex-direction: column; /* empilha título e ícones */
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.4rem;
+  padding: 2.2rem 2rem;
+}
+
+.contactos-social h3 {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.2rem;
+  color: #5a6350;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 1.4rem;
+}
+
+.social-icon img {
+  width: 38px; /* ícone maior */
+  height: 38px;
+  background: #e7e6e3;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+  background: #dddcd7;
+}
+
+/* Mapa */
+.contactos-map {
+  padding: 0;
+}
+
+.contactos-map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Página de contactos — topbar sempre clara */
+body.contactos-page .topbar {
+  background: #faf8f4 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.contactos-page .topbar .logo,
+body.contactos-page .topbar nav a,
+body.contactos-page .topbar span,
+body.contactos-page .topbar .lang-switch button {
+  color: #5a6350 !important;
+}
+
+body.contactos-page .topbar .btn-small {
+  background: #5a6350 !important;
+  color: #fff !important;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .contactos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contactos-map {
+    height: 400px;
+  }
+
+  .contactos-social {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
 }
