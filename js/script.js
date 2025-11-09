@@ -9,65 +9,120 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-// modal de quartos
-const modal = document.getElementById("room-modal");
-const closeModal = document.getElementById("close-modal");
-const modalTitle = document.getElementById("modal-title");
-const modalDesc = document.getElementById("modal-description");
-
-const roomData = {
+// === DADOS DOS QUARTOS ===
+const quartosData = {
   1: {
-    pt: {
-      title: "Quarto Superior",
-      desc: "Quarto amplo, cama de casal, vista jardim e detalhes rústicos.",
-    },
-    en: {
-      title: "Superior Room",
-      desc: "Spacious room, double bed, garden view and rustic details.",
-    },
+    tag: "Homenagem ao Modernismo",
+    title: "Quarto 1",
+    description: `
+      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
+      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
+      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
+      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+    `,
+    quote: "Onde a arte encontra o descanso.",
+    image: "media/rooms/quarto1.jpg",
+    gallery: ["media/rooms/quarto1b.jpg", "media/rooms/quarto1c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bath.svg", label: "Casa de Banho Privada" },
+      { icon: "amenities.svg", label: "Produtos de Luxo" },
+    ],
   },
   2: {
-    pt: {
-      title: "Quarto Familiar",
-      desc: "Ideal para famílias, com capacidade até 4 hóspedes.",
-    },
-    en: {
-      title: "Family Room",
-      desc: "Ideal for families, accommodates up to 4 guests.",
-    },
+    tag: "Elegância Literária",
+    title: "Quarto 2",
+    description: `
+      Uma homenagem a Agustina Bessa-Luís, este quarto feminino e sofisticado combina delicadeza e força.
+      Texturas suaves e tons dourados convidam ao descanso e à leitura silenciosa.
+    `,
+    quote: "Cada palavra inspira calma e conforto.",
+    image: "media/rooms/quarto2.jpg",
+    gallery: ["media/rooms/quarto2b.jpg", "media/rooms/quarto2c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bath.svg", label: "Casa de Banho Privada" },
+    ],
   },
-  3: {
-    pt: {
-      title: "Suite Rústica",
-      desc: "Ambiente acolhedor com elementos tradicionais.",
-    },
-    en: {
-      title: "Rustic Suite",
-      desc: "Cozy environment with traditional elements.",
-    },
-  },
+  // ... adiciona os quartos 3, 4, 5 e 6 no mesmo formato
 };
 
-document.querySelectorAll(".room-card").forEach((card) => {
-  card.addEventListener("click", () => {
-    const room = card.dataset.room;
-    const currentLang = document.documentElement.lang || "pt";
-    const data = roomData[room] ? roomData[room][currentLang] : null;
+// === ELEMENTOS DO MODAL ===
+const modal = document.getElementById("quarto-modal");
+const closeModal = document.getElementById("close-modal");
 
-    modalTitle.textContent = data ? data.title : "Quarto";
-    modalDesc.textContent = data ? data.desc : "Descrição do quarto.";
+// Campos a preencher
+const modalImage = document.getElementById("modal-image");
+const modalTag = document.getElementById("modal-tag");
+const modalTitle = document.getElementById("modal-title");
+const modalDesc = document.getElementById("modal-description");
+const galleryContainer = document.querySelector(".quarto-gallery");
+const quoteContainer = document.querySelector(".quarto-quote");
+const detalhesContainer = document.querySelector(".detalhes ul");
+const comodidadesContainer = document.querySelector(".icons-grid");
+
+// === ABRIR MODAL COM DADOS ===
+document.querySelectorAll(".quarto-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const id = card.getAttribute("data-room");
+    const quarto = quartosData[id];
+    if (!quarto) return;
+
+    // Atualiza imagem e textos
+    modalImage.src = quarto.image;
+    modalTag.textContent = quarto.tag;
+    modalTitle.textContent = quarto.title;
+    modalDesc.textContent = quarto.description;
+    quoteContainer.innerHTML = `<em>“${quarto.quote}”</em>`;
+
+    // Atualiza galeria
+    galleryContainer.innerHTML = quarto.gallery
+      .map(img => `<img src="${img}" alt="">`)
+      .join("");
+
+    // Atualiza detalhes
+    detalhesContainer.innerHTML = `
+      <li><strong>Capacidade:</strong> <span>${quarto.capacidade}</span></li>
+      <li><strong>Cama:</strong> <span>${quarto.cama}</span></li>
+      <li><strong>Área:</strong> <span>${quarto.area}</span></li>
+    `;
+
+    // Atualiza comodidades
+    comodidadesContainer.innerHTML = quarto.comodidades
+      .map(
+        c =>
+          `<div class="icon"><img src="media/icons/${c.icon}" alt=""><span>${c.label}</span></div>`
+      )
+      .join("");
+
+    // Mostra modal
     modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
   });
 });
 
-if (closeModal) {
-  closeModal.addEventListener("click", () => modal.classList.add("hidden"));
-}
-if (modal) {
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) modal.classList.add("hidden");
-  });
-}
+// === FECHAR MODAL ===
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  document.body.style.overflow = "auto";
+});
+
+document.querySelector(".quarto-overlay").addEventListener("click", () => {
+  modal.classList.add("hidden");
+  document.body.style.overflow = "auto";
+});
+
 
 // efeito de scroll para mudar a cor da topbar
 const topbar = document.querySelector(".topbar");
