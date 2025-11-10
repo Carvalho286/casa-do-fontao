@@ -22,7 +22,7 @@ const quartosData = {
     `,
     quote: "Onde a arte encontra o descanso.",
     image: "media/rooms/quarto1.jpg",
-    gallery: ["media/rooms/quarto1b.jpg", "media/rooms/quarto1c.jpg"],
+    gallery: ["media/rooms/quarto1b.jpg", "media/rooms/quarto1d.jpg", "media/rooms/quarto1c.jpg"],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
     area: "20 m²",
@@ -31,8 +31,8 @@ const quartosData = {
       { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
       { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bath.svg", label: "Casa de Banho Privada" },
-      { icon: "amenities.svg", label: "Produtos de Luxo" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "products.svg", label: "Produtos de Luxo" },
     ],
   },
   2: {
@@ -52,11 +52,134 @@ const quartosData = {
       { icon: "wifi.svg", label: "Wi-Fi" },
       { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bath.svg", label: "Casa de Banho Privada" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
     ],
   },
-  // ... adiciona os quartos 3, 4, 5 e 6 no mesmo formato
+  3: {
+    tag: "Homenagem ao Modernismo",
+    title: "Quarto 3",
+    description: `
+      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
+      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
+      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
+      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+    `,
+    quote: "Onde a arte encontra o descanso.",
+    image: "media/rooms/quarto3.jpg",
+    gallery: ["media/rooms/quarto3b.jpg", "media/rooms/quarto3c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "products.svg", label: "Produtos de Luxo" },
+    ],
+  },
+  4: {
+    tag: "Homenagem ao Modernismo",
+    title: "Quarto 4",
+    description: `
+      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
+      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
+      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
+      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+    `,
+    quote: "Onde a arte encontra o descanso.",
+    image: "media/rooms/quarto4.jpg",
+    gallery: ["media/rooms/quarto4b.jpg", "media/rooms/quarto4d.jpg", "media/rooms/quarto4c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "products.svg", label: "Produtos de Luxo" },
+    ],
+  },
+  5: {
+    tag: "Homenagem ao Modernismo",
+    title: "Quarto 5",
+    description: `
+      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
+      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
+      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
+      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+    `,
+    quote: "Onde a arte encontra o descanso.",
+    image: "media/rooms/quarto5.jpg",
+    gallery: ["media/rooms/quarto5b.jpg", "media/rooms/quarto5c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "products.svg", label: "Produtos de Luxo" },
+    ],
+  },
+  6: {
+    tag: "Homenagem ao Modernismo",
+    title: "Quarto 6",
+    description: `
+      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
+      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
+      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
+      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+    `,
+    quote: "Onde a arte encontra o descanso.",
+    image: "media/rooms/quarto6.jpg",
+    gallery: ["media/rooms/quarto6b.jpg", "media/rooms/quarto6d.jpg", "media/rooms/quarto6c.jpg"],
+    capacidade: "2 pessoas",
+    cama: "Cama Queen Size",
+    area: "20 m²",
+    comodidades: [
+      { icon: "wifi.svg", label: "Wi-Fi" },
+      { icon: "coffee.svg", label: "Café & Chá" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "tv.svg", label: "Smart TV" },
+      { icon: "bath.svg", label: "Casa de Banho Privada" },
+      { icon: "amenities.svg", label: "Produtos de Luxo" },
+    ],
+  },
 };
+
+// === GERAR LISTA DE QUARTOS ===
+const grid = document.getElementById("quartos-grid");
+
+Object.entries(quartosData).forEach(([id, quarto]) => {
+  const card = document.createElement("article");
+  card.classList.add("quarto-card");
+  card.setAttribute("data-room", id);
+
+  card.innerHTML = `
+    <div class="quarto-img">
+      <img src="${quarto.image}" alt="${quarto.title}" />
+    </div>
+    <div class="quarto-info">
+      <p class="quarto-tag">${quarto.tag}</p>
+      <h3 class="quarto-title">${quarto.title}</h3>
+      <p class="quarto-text">${quarto.description.split(".")[0]}.</p>
+      <div class="quarto-meta">
+        <span>${quarto.capacidade}</span>
+        <span>${quarto.area}</span>
+        <span>${quarto.cama}</span>
+      </div>
+    </div>
+  `;
+
+  grid.appendChild(card);
+});
+
 
 // === ELEMENTOS DO MODAL ===
 const modal = document.getElementById("quarto-modal");
@@ -121,6 +244,15 @@ closeModal.addEventListener("click", () => {
 document.querySelector(".quarto-overlay").addEventListener("click", () => {
   modal.classList.add("hidden");
   document.body.style.overflow = "auto";
+});
+
+// Adiciona classe 'portrait' a imagens verticais na galeria
+document.querySelectorAll('.quarto-gallery img').forEach(img => {
+  img.addEventListener('load', () => {
+    if (img.naturalHeight > img.naturalWidth) {
+      img.classList.add('portrait');
+    }
+  });
 });
 
 

@@ -343,7 +343,7 @@ nav a {
 .essencia-title {
   color: #c7a045;
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 1.2rem;
 }
 
@@ -555,9 +555,9 @@ nav a {
 }
 
 .quartos-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Pro", serif;
   font-size: 2.6rem;
-  font-weight: 600;
+  font-weight: 300;
   color: #5a6350;
   margin-bottom: 1rem;
 }
@@ -612,12 +612,12 @@ nav a {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.06em;
-  color: #c7a045;
+  color: #c9a961;
   margin-bottom: 0.4rem;
 }
 
 .quarto-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Pro", serif;
   font-size: 1.5rem;
   color: #5a6350;
   font-weight: 600;
@@ -626,7 +626,7 @@ nav a {
 
 .quarto-text {
   font-family: "Crimson Pro", serif;
-  color: #5a6350;
+  color: #ababab;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -635,7 +635,7 @@ nav a {
 .quarto-meta {
   font-family: "Crimson Pro", serif;
   font-size: 0.9rem;
-  color: #7a7a7a;
+  color: #ababab;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -734,7 +734,8 @@ nav a {
 }
 
 .quarto-header-text .quarto-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Pro", serif;
+  color: #fff;
   font-size: 2.4rem;
   font-weight: 600;
 }
@@ -748,33 +749,50 @@ nav a {
 }
 
 .quarto-main h3 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Crimson Pro", serif;
   color: #5a6350;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.quarto-main p {
+.quarto-description {
   font-family: "Crimson Pro", serif;
-  color: #6b6b6b;
+  color: #ababab;
   line-height: 1.7;
   margin-bottom: 1.4rem;
 }
 
 .quarto-quote {
-  color: #c7a045;
+  color: #5a6350;
   margin: 1.5rem 0;
+  border-left: 2px solid #c7a045;
+  padding-left: 12px;
 }
 
 /* Galeria */
 .quarto-gallery {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
+
 .quarto-gallery img {
-  width: calc(50% - 0.5rem);
-  border-radius: 4px;
+  height: 240px;
+  flex: 1 1 45%;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f4f4f4;
+  transition: transform 0.3s ease;
+}
+
+.quarto-gallery img.portrait {
+  object-fit: contain; /* corrige verticais */
+  height: 280px; /* ligeiramente maior para compensar */
+}
+
+.quarto-gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Reserva */
@@ -858,8 +876,13 @@ nav a {
 .icon img {
   width: 32px;
   height: 32px;
-  margin-bottom: 0.3rem;
-  opacity: 0.8;
+  opacity: 0.75;
+  background-color: rgba(122, 132, 104, 0.1);
+  padding: 6px;
+  border-radius: 10px;
+  display: flex; /* centra o ícone dentro do quadrado */
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsivo */
@@ -869,6 +892,173 @@ nav a {
   }
   .quarto-hero {
     height: 280px;
+  }
+}
+
+/* --- Forçar .quarto-meta ao fundo apenas na grelha principal --- */
+#quartos .quarto-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#quartos .quarto-text {
+  flex-grow: 1; /* ocupa o espaço livre e empurra o meta para baixo */
+}
+
+#quartos .quarto-meta {
+  margin-top: auto; /* fixa o meta ao fundo */
+}
+
+/* --- EVENTOS --- */
+.eventos-section {
+  background: #faf8f4;
+  padding: 8rem 0;
+  font-family: "Crimson Pro", serif;
+  color: #5a6350;
+}
+
+.container-eventos {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* TEXTO PRINCIPAL */
+.eventos-subtitle {
+  color: #c7a045;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.eventos-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 2.6rem;
+  color: #5a6350;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.eventos-intro {
+  color: #ababab;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 550px;
+}
+
+/* CARTÕES DE EVENTO */
+.eventos-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.evento-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  align-items: start;
+  gap: 1.2rem;
+  padding: 1.5rem 1.8rem;
+  position: relative;
+}
+
+.evento-icon {
+  background: #e7e6e3;
+  width: 48px;
+  height: 48px;
+  border-radius: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evento-icon img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+}
+
+.evento-info h3 {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.2rem;
+  color: #5a6350;
+  margin-bottom: 0.4rem;
+}
+
+.evento-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  color: #ababab;
+  font-size: 0.95rem;
+}
+
+.evento-extra {
+  font-size: 0.9rem;
+  color: #c7a045;
+  font-weight: 500;
+  align-self: start;
+}
+
+.evento-extra.personalizado {
+  color: #5a6350;
+  font-style: italic;
+}
+
+/* BOTÃO */
+.btn-eventos {
+  display: inline-block;
+  background: #5a6350;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-eventos:hover {
+  background: #4a5442;
+}
+
+/* IMAGEM */
+.eventos-right img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+.evento-info ul li::before {
+  content: " •";
+  color: #c7a045; /* dourado suave */
+  margin-right: 6px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .container-eventos {
+    grid-template-columns: 1fr;
+  }
+
+  .eventos-right {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .eventos-intro {
+    max-width: 100%;
   }
 }
 
@@ -1031,8 +1221,8 @@ nav a {
 }
 
 .social-icon img:hover {
+  background: #c7a045;
   transform: scale(1.1);
-  background: #dddcd7;
 }
 
 /* Mapa */
@@ -1078,5 +1268,133 @@ body.contactos-page .topbar .btn-small {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+  }
+}
+
+/* --- FOOTER --- */
+.footer {
+  background: #f3f1ec;
+  color: #5a6350;
+  padding: 4rem 0 2rem;
+  font-family: "Crimson Pro", serif;
+}
+
+.footer-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 3rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+/* --- BRAND --- */
+.footer-brand h3 {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #5a6350;
+}
+
+.footer-brand p {
+  color: #6b6b6b;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  max-width: 340px;
+}
+
+/* SOCIAL ICONS */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials a img {
+  width: 34px;
+  height: 34px;
+  background: #e7e6e3;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a img:hover {
+  background: #c7a045;
+  transform: scale(1.1);
+}
+
+/* --- LINKS --- */
+.footer-links h4,
+.footer-contact h4 {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #5a6350;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #c7a045;
+}
+
+/* --- CONTACT --- */
+.footer-contact li {
+  font-size: 0.95rem;
+  color: #6b6b6b;
+}
+
+.footer-contact a {
+  color: #5a6350;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #c7a045;
+}
+
+/* --- BOTTOM --- */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+.footer-bottom .credits {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto 1.5rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
   }
 }

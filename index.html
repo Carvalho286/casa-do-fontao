@@ -24,8 +24,9 @@
         <nav>
           <a href="#essencia" data-i18n="home">A casa</a>
           <a href="#experiencias" data-i18n="experiences">Experiências</a>
+          <a href="#quartos" data-i18n="rooms">Quartos</a>
           <a href="#eventos" data-i18n="events">Eventos</a>
-          <a href="#galeria" data-i18n="gallery">Galeria</a>
+          <a href="#historia" data-i18n="history">História</a>
           <a href="contactos.html" data-i18n="contact">Contactos</a>
         </nav>
         <div class="right-actions">
@@ -49,7 +50,7 @@
     <section class="hero" id="hero">
       <!-- Vídeo de fundo -->
       <video class="hero-video" autoplay muted loop playsinline>
-        <source src="media/video_hero_low_quality.mp4" type="video/mp4" />
+        <source src="media/video_low.mp4" type="video/mp4" />
       </video>
 
       <!-- Overlay -->
@@ -275,131 +276,10 @@
           Conforto contemporâneo em harmonia com a memória de tempos passados.
         </p>
 
-        <div class="quartos-grid">
-          <!-- QUARTO 1 -->
-          <article class="quarto-card" data-room="1">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto1.jpg" alt="Quarto 1" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">Homenagem ao Modernismo</p>
-              <h3 class="quarto-title">Quarto 1</h3>
-              <p class="quarto-text">
-                Inspirado no génio de Amadeo de Souza-Cardoso, este quarto
-                celebra a ousadia criativa do modernismo português.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>20 m²</span>
-                <span>Cama Queen Size</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- QUARTO 2 -->
-          <article class="quarto-card" data-room="2">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto2.jpg" alt="Quarto 2" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">Elegância Literária</p>
-              <h3 class="quarto-title">Quarto 2</h3>
-              <p class="quarto-text">
-                Uma homenagem a Agustina Bessa-Luís, este quarto feminino e
-                sofisticado combina delicadeza e força.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>20 m²</span>
-                <span>Cama Queen Size</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- QUARTO 3 -->
-          <article class="quarto-card" data-room="3">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto3.jpg" alt="Quarto 3" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">Poesia entre as Montanhas</p>
-              <h3 class="quarto-title">Quarto 3</h3>
-              <p class="quarto-text">
-                Dedicado a Teixeira de Pascoaes, este quarto respira serenidade
-                e contemplação, com vista para o vale.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>32 m²</span>
-                <span>Cama King Size</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- QUARTO 4 -->
-          <article class="quarto-card" data-room="4">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto4.jpg" alt="Quarto 4" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">Vista para o Rio</p>
-              <h3 class="quarto-title">Quarto 4</h3>
-              <p class="quarto-text">
-                Janelas generosas viradas para o Tâmega oferecem uma vista
-                deslumbrante e um refúgio de serenidade.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>35 m²</span>
-                <span>Cama King Size</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- QUARTO 5 -->
-          <article class="quarto-card" data-room="5">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto5.jpg" alt="Quarto 5" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">Refúgio na Natureza</p>
-              <h3 class="quarto-title">Quarto 5</h3>
-              <p class="quarto-text">
-                Rodeado pelo verde do bosque ancestral, este quarto é um
-                verdadeiro refúgio de paz e harmonia.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>26 m²</span>
-                <span>Cama King Size</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- QUARTO 6 -->
-          <article class="quarto-card" data-room="6">
-            <div class="quarto-img">
-              <img src="media/rooms/quarto6.jpg" alt="Quarto 6" />
-            </div>
-            <div class="quarto-info">
-              <p class="quarto-tag">O Quarto Principal</p>
-              <h3 class="quarto-title">Quarto 6</h3>
-              <p class="quarto-text">
-                A suíte principal da Casa do Fontão, espaçosa e luminosa,
-                combina conforto e herança histórica.
-              </p>
-              <div class="quarto-meta">
-                <span>2 pessoas</span>
-                <span>45 m²</span>
-                <span>Cama King Size</span>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div class="quartos-grid" id="quartos-grid"></div>
       </div>
     </section>
 
-    <!-- MODAL DE QUARTO -->
     <!-- MODAL DE QUARTO -->
     <div id="quarto-modal" class="quarto-modal hidden">
       <div class="quarto-overlay"></div>
@@ -422,7 +302,7 @@
         <div class="quarto-body">
           <div class="quarto-main">
             <h3>A Experiência</h3>
-            <p id="modal-description">
+            <p class="quarto-description" id="modal-description">
               Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra
               a ousadia criativa do modernismo português.
             </p>
@@ -434,16 +314,6 @@
             <div class="quarto-gallery">
               <img src="media/rooms/quarto1b.jpg" alt="Casa de Banho" />
               <img src="media/rooms/quarto1c.jpg" alt="Detalhes" />
-            </div>
-
-            <div class="quarto-reserva">
-              <p>
-                Reserve este quarto<br /><small
-                  >Entre em contacto para disponibilidade e condições
-                  especiais.</small
-                >
-              </p>
-              <a href="#" class="btn-reserva">Fazer Reserva</a>
             </div>
           </div>
 
@@ -493,21 +363,82 @@
       </div>
     </div>
 
-    <!-- SALA DE EVENTOS -->
-    <section id="eventos" class="section section-dark">
-      <div class="container narrow">
-        <p class="section-tag" data-i18n="eventsRoom">Sala de Eventos</p>
-        <h2 class="section-title light" data-i18n="eventsTitle">
-          Um espaço para celebrações
-        </h2>
-        <p class="section-text light" data-i18n="eventsText">
-          Ideal para pequenos eventos, reuniões familiares ou experiências
-          gastronómicas privadas.
-        </p>
+    <!-- EVENTOS -->
+    <section id="eventos" class="eventos-section">
+      <div class="container-eventos">
+        <!-- TEXTO E CONTEÚDO -->
+        <div class="eventos-left">
+          <p class="eventos-subtitle">Momentos Inesquecíveis</p>
+          <h2 class="eventos-title">Salão de Eventos</h2>
+          <p class="eventos-intro">
+            O nosso salão de eventos familiares oferece um cenário único para
+            celebrações intimistas. Com os seus tectos altos, candeeiros de
+            época e mobiliário antigo cuidadosamente preservado, cada evento
+            torna-se numa experiência memorável envolta em elegância e
+            autenticidade.
+          </p>
+
+          <div class="eventos-cards">
+            <div class="evento-card">
+              <div class="evento-icon">
+                <img src="media/icons/heart.svg" alt="Celebrações Íntimas" />
+              </div>
+              <div class="evento-info">
+                <h3>Celebrações Íntimas</h3>
+                <ul>
+                  <li>Uso exclusivo do salão</li>
+                  <li>Decoração clássica incluída</li>
+                  <li>Apoio na organização</li>
+                  <li>Acesso à cozinha</li>
+                </ul>
+              </div>
+              <span class="evento-extra">Até X pessoas</span>
+            </div>
+
+            <div class="evento-card">
+              <div class="evento-icon">
+                <img src="media/icons/users.svg" alt="Eventos Familiares" />
+              </div>
+              <div class="evento-info">
+                <h3>Eventos Familiares</h3>
+                <ul>
+                  <li>Espaços interior e exterior</li>
+                  <li>Equipamento audiovisual</li>
+                  <li>Catering opcional</li>
+                  <li>Fotografia de evento</li>
+                </ul>
+              </div>
+              <span class="evento-extra">Até X pessoas</span>
+            </div>
+
+            <div class="evento-card">
+              <div class="evento-icon">
+                <img src="media/icons/sparkle.svg" alt="Ocasiões Especiais" />
+              </div>
+              <div class="evento-info">
+                <h3>Ocasiões Especiais</h3>
+                <ul>
+                  <li>Planeamento sob medida</li>
+                  <li>Experiências exclusivas</li>
+                  <li>Serviço completo</li>
+                  <li>Consultoria personalizada</li>
+                </ul>
+              </div>
+              <span class="evento-extra">Personalizado</span>
+            </div>
+          </div>
+
+          <a href="contactos.html" class="btn-eventos">Solicite Informações</a>
+        </div>
+
+        <!-- IMAGEM -->
+        <div class="eventos-right">
+          <img src="media/images/eventos.jpg" alt="Salão de Eventos" />
+        </div>
       </div>
     </section>
 
-    <!-- HISTÓRIA -->
+    <!-- HISTÓRIA
     <section id="historia" class="section section-light">
       <div class="container narrow">
         <p class="section-tag" data-i18n="history">História</p>
@@ -520,12 +451,56 @@
           adaptadas ao conforto atual.
         </p>
       </div>
-    </section>
+    </section> -->
 
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-content">
-        <p>© 2025 Casa do Fontão</p>
-        <p><a href="contactos.html" data-i18n="contact">Contactos</a></p>
+      <div class="footer-container">
+        <!-- COLUNA 1 -->
+        <div class="footer-brand">
+          <h3>Casa do Fontão</h3>
+          <p>
+            Uma casa histórica do século XVIII, onde o charme e a serenidade se
+            unem num refúgio autêntico em Amarante.
+          </p>
+          <div class="footer-socials">
+            <a href="#"
+              ><img src="media/icons/facebook-logo.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="media/icons/instagram-logo.svg" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+
+        <!-- COLUNA 2 -->
+        <div class="footer-links">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="#essencia">A Casa</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#quartos">Quartos</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 3 -->
+        <div class="footer-contact">
+          <h4>Contactos</h4>
+          <ul>
+            <li>Rua XXX, 4600-XXX Amarante</li>
+            <li>
+              <a href="mailto:info@casadofontao.pt">info@casadofontao.pt</a>
+            </li>
+            <li><a href="tel:+351912345678">+351 912 345 678</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Casa do Fontão. Todos os direitos reservados.</p>
+        <p class="credits">Website desenvolvido por Miguel Carvalho</p>
       </div>
     </footer>
 
