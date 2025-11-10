@@ -22,7 +22,11 @@ const quartosData = {
     `,
     quote: "Onde a arte encontra o descanso.",
     image: "media/rooms/quarto1.jpg",
-    gallery: ["media/rooms/quarto1b.jpg", "media/rooms/quarto1d.jpg", "media/rooms/quarto1c.jpg"],
+    gallery: [
+      "media/rooms/quarto1b.jpg",
+      "media/rooms/quarto1d.jpg",
+      "media/rooms/quarto1c.jpg",
+    ],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
     area: "20 m²",
@@ -90,7 +94,11 @@ const quartosData = {
     `,
     quote: "Onde a arte encontra o descanso.",
     image: "media/rooms/quarto4.jpg",
-    gallery: ["media/rooms/quarto4b.jpg", "media/rooms/quarto4d.jpg", "media/rooms/quarto4c.jpg"],
+    gallery: [
+      "media/rooms/quarto4b.jpg",
+      "media/rooms/quarto4d.jpg",
+      "media/rooms/quarto4c.jpg",
+    ],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
     area: "20 m²",
@@ -156,30 +164,42 @@ const quartosData = {
 // === GERAR LISTA DE QUARTOS ===
 const grid = document.getElementById("quartos-grid");
 
-Object.entries(quartosData).forEach(([id, quarto]) => {
-  const card = document.createElement("article");
-  card.classList.add("quarto-card");
-  card.setAttribute("data-room", id);
+function renderQuartosI18n() {
+  const lang = localStorage.getItem("casa-lang") || "pt";
+  const langData = translations[lang]?.quartos || {};
 
-  card.innerHTML = `
-    <div class="quarto-img">
-      <img src="${quarto.image}" alt="${quarto.title}" />
-    </div>
-    <div class="quarto-info">
-      <p class="quarto-tag">${quarto.tag}</p>
-      <h3 class="quarto-title">${quarto.title}</h3>
-      <p class="quarto-text">${quarto.description.split(".")[0]}.</p>
-      <div class="quarto-meta">
-        <span>${quarto.capacidade}</span>
-        <span>${quarto.area}</span>
-        <span>${quarto.cama}</span>
+  grid.innerHTML = "";
+
+  Object.entries(quartosData).forEach(([id, quarto]) => {
+    const traduzido = langData[id] || quarto;
+
+    const card = document.createElement("article");
+    card.classList.add("quarto-card");
+    card.setAttribute("data-room", id);
+
+    card.innerHTML = `
+      <div class="quarto-img">
+        <img src="${quarto.image}" alt="${traduzido.title}" />
       </div>
-    </div>
-  `;
+      <div class="quarto-info">
+        <p class="quarto-tag">${traduzido.tag}</p>
+        <h3 class="quarto-title">${traduzido.title}</h3>
+        <p class="quarto-text">${traduzido.description.split(".")[0]}.</p>
+        <div class="quarto-meta">
+          <span>${traduzido.capacidade}</span>
+          <span>${traduzido.area}</span>
+          <span>${traduzido.cama}</span>
+        </div>
+      </div>
+    `;
 
-  grid.appendChild(card);
-});
+    grid.appendChild(card);
+  });
 
+  attachModalI18n();
+}
+
+renderQuartosI18n();
 
 // === ELEMENTOS DO MODAL ===
 const modal = document.getElementById("quarto-modal");
@@ -196,44 +216,65 @@ const detalhesContainer = document.querySelector(".detalhes ul");
 const comodidadesContainer = document.querySelector(".icons-grid");
 
 // === ABRIR MODAL COM DADOS ===
-document.querySelectorAll(".quarto-card").forEach(card => {
-  card.addEventListener("click", () => {
-    const id = card.getAttribute("data-room");
-    const quarto = quartosData[id];
-    if (!quarto) return;
+function attachModalI18n() {
+  const lang = localStorage.getItem("casa-lang") || "pt";
+  const langData = translations[lang]?.quartos || {};
 
-    // Atualiza imagem e textos
-    modalImage.src = quarto.image;
-    modalTag.textContent = quarto.tag;
-    modalTitle.textContent = quarto.title;
-    modalDesc.textContent = quarto.description;
-    quoteContainer.innerHTML = `<em>“${quarto.quote}”</em>`;
+  document.querySelectorAll(".quarto-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const id = card.getAttribute("data-room");
+      const quarto = quartosData[id];
+      const traduzido = langData[id] || quarto;
+      if (!quarto) return;
 
-    // Atualiza galeria
-    galleryContainer.innerHTML = quarto.gallery
-      .map(img => `<img src="${img}" alt="">`)
-      .join("");
+      // Atualiza imagem e textos
+      modalImage.src = quarto.image;
+      modalTag.textContent = traduzido.tag;
+      modalTitle.textContent = traduzido.title;
+      modalDesc.textContent = traduzido.description;
+      quoteContainer.innerHTML = `<em>“${traduzido.quote}”</em>`;
 
-    // Atualiza detalhes
-    detalhesContainer.innerHTML = `
-      <li><strong>Capacidade:</strong> <span>${quarto.capacidade}</span></li>
-      <li><strong>Cama:</strong> <span>${quarto.cama}</span></li>
-      <li><strong>Área:</strong> <span>${quarto.area}</span></li>
+      // Atualiza galeria
+      galleryContainer.innerHTML = quarto.gallery
+        .map((img) => `<img src="${img}" alt="">`)
+        .join("");
+
+      // Atualiza detalhes
+      detalhesContainer.innerHTML = `
+        <li><strong>${
+          lang === "pt" ? "Capacidade:" : "Capacity:"
+        }</strong> <span>${traduzido.capacidade}</span></li>
+        <li><strong>${lang === "pt" ? "Cama:" : "Bed:"}</strong> <span>${
+        traduzido.cama
+      }</span></li>
+        <li><strong>${lang === "pt" ? "Área:" : "Area:"}</strong> <span>${
+        traduzido.area
+      }</span></li>
+      `;
+
+      // Atualiza comodidades
+      // Atualiza comodidades (com tradução)
+      comodidadesContainer.innerHTML = quarto.comodidades
+        .map((c) => {
+          // tenta usar tradução, senão usa o label original
+          const translatedLabel =
+            traduzido.comodidades?.[c.icon.replace(".svg", "")] || c.label;
+
+          return `
+      <div class="icon">
+        <img src="media/icons/${c.icon}" alt="">
+        <span>${translatedLabel}</span>
+      </div>
     `;
+        })
+        .join("");
 
-    // Atualiza comodidades
-    comodidadesContainer.innerHTML = quarto.comodidades
-      .map(
-        c =>
-          `<div class="icon"><img src="media/icons/${c.icon}" alt=""><span>${c.label}</span></div>`
-      )
-      .join("");
-
-    // Mostra modal
-    modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
+      // Mostra modal
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    });
   });
-});
+}
 
 // === FECHAR MODAL ===
 closeModal.addEventListener("click", () => {
@@ -247,14 +288,13 @@ document.querySelector(".quarto-overlay").addEventListener("click", () => {
 });
 
 // Adiciona classe 'portrait' a imagens verticais na galeria
-document.querySelectorAll('.quarto-gallery img').forEach(img => {
-  img.addEventListener('load', () => {
+document.querySelectorAll(".quarto-gallery img").forEach((img) => {
+  img.addEventListener("load", () => {
     if (img.naturalHeight > img.naturalWidth) {
-      img.classList.add('portrait');
+      img.classList.add("portrait");
     }
   });
 });
-
 
 // efeito de scroll para mudar a cor da topbar
 const topbar = document.querySelector(".topbar");
@@ -265,3 +305,6 @@ window.addEventListener("scroll", () => {
     topbar.classList.remove("scrolled");
   }
 });
+
+// === REGERAR QUARTOS QUANDO O IDIOMA MUDA ===
+document.addEventListener("langChanged", renderQuartosI18n);
