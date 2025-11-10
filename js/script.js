@@ -155,8 +155,8 @@ const quartosData = {
       { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
       { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bath.svg", label: "Casa de Banho Privada" },
-      { icon: "amenities.svg", label: "Produtos de Luxo" },
+      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "products.svg", label: "Produtos de Luxo" },
     ],
   },
 };
