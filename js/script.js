@@ -138,7 +138,7 @@ const quartosData = {
     `,
     quote: "Onde a arte encontra o descanso.",
     image: "media/rooms/quarto6.jpg",
-    gallery: ["media/rooms/quarto6b.jpg", "media/rooms/quarto6d.jpg", "media/rooms/quarto6c.jpg"],
+    gallery: ["media/rooms/quarto6b.jpg", "media/rooms/quarto6c.jpg"],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
     area: "20 m²",
