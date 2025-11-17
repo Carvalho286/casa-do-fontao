@@ -82,6 +82,7 @@ nav a {
   align-items: center;
   gap: 1rem;
   justify-self: end; /* garante que fica mesmo à direita */
+  flex-wrap: nowrap; /* evita quebra para 2 linhas no mobile */
 }
 
 .btn-small {
@@ -93,6 +94,12 @@ nav a {
   font-size: 0.95rem;
   border: none;
   transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  display: inline-flex; /* centra verticalmente o texto */
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* evita quebrar "Book now" */
+  line-height: 1; /* remove variações por altura da fonte */
+  flex-shrink: 0; /* não encolher a largura do botão */
 }
 
 .lang-switch {
@@ -402,6 +409,13 @@ nav a {
 
 /* Responsivo */
 @media (max-width: 900px) {
+  /* topbar/compressão para caber tudo numa linha */
+  .nav { padding-left: 12px; column-gap: 0.6rem; min-height: 60px; }
+  .logo { font-size: 1.45rem; white-space: nowrap; }
+  .right-actions { gap: 0.6rem; }
+  .lang-switch { gap: 0.25rem; }
+  .lang-switch button { font-size: 0.9rem; }
+  .btn-small { padding: 6px 12px; font-size: 0.88rem; }
   .essencia-container {
     grid-template-columns: 1fr;
   }
@@ -956,6 +970,8 @@ nav a {
 
 /* Telefones pequenos (<= 480px) */
 @media (max-width: 480px) {
+  /* botão mais compacto para caber sem quebrar em EN */
+  .btn-small { padding: 7px 14px; font-size: 0.9rem; }
   /* remover padding externo e usar a largura total real */
   .quarto-modal { padding: 0; }
   .quarto-content { width: 100%; max-width: 100%; border-radius: 0; margin: 0; }
