@@ -308,3 +308,48 @@ window.addEventListener("scroll", () => {
 
 // === REGERAR QUARTOS QUANDO O IDIOMA MUDA ===
 document.addEventListener("langChanged", renderQuartosI18n);
+
+// === DROPDOWN DE IDIOMA ===
+const langSwitch = document.querySelector(".lang-switch");
+const langCurrent = document.getElementById("lang-current");
+const currentLangSpan = document.getElementById("current-lang");
+const langDropdown = document.getElementById("lang-dropdown");
+const langOptions = document.querySelectorAll(".lang-option");
+
+// Abre/fecha dropdown
+if (langCurrent) {
+  langCurrent.addEventListener("click", (e) => {
+    e.stopPropagation();
+    langSwitch.classList.toggle("open");
+  });
+}
+
+// Fecha dropdown ao clicar fora
+document.addEventListener("click", (e) => {
+  if (!langSwitch.contains(e.target)) {
+    langSwitch.classList.remove("open");
+  }
+});
+
+// Atualiza idioma ao selecionar opção
+langOptions.forEach((option) => {
+  option.addEventListener("click", () => {
+    const selectedLang = option.getAttribute("data-lang").toUpperCase();
+    currentLangSpan.textContent = selectedLang;
+    langSwitch.classList.remove("open");
+
+    // Marca opção ativa
+    langOptions.forEach((opt) => opt.classList.remove("active"));
+    option.classList.add("active");
+  });
+});
+
+// Define idioma inicial como ativo
+const savedLang = (localStorage.getItem("casa-lang") || "pt").toLowerCase();
+const activeOption = document.querySelector(
+  `.lang-option[data-lang="${savedLang}"]`
+);
+if (activeOption) {
+  activeOption.classList.add("active");
+  currentLangSpan.textContent = savedLang.toUpperCase();
+}

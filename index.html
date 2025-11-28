@@ -38,9 +38,18 @@
             >Reservar</a
           >
           <div class="lang-switch">
-            <button id="lang-pt">PT</button>
-            <span>|</span>
-            <button id="lang-en">EN</button>
+            <button class="lang-current" id="lang-current">
+              <span id="current-lang">PT</span>
+              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="lang-dropdown" id="lang-dropdown">
+              <button class="lang-option" data-lang="pt">PT — Português</button>
+              <button class="lang-option" data-lang="en">EN — English</button>
+              <button class="lang-option" data-lang="fr">FR — Français</button>
+              <button class="lang-option" data-lang="es">ES — Español</button>
+            </div>
           </div>
         </div>
       </div>
@@ -437,22 +446,7 @@
         </div>
       </div>
     </section>
-
-    <!-- HISTÓRIA
-    <section id="historia" class="section section-light">
-      <div class="container narrow">
-        <p class="section-tag" data-i18n="history">História</p>
-        <h2 class="section-title" data-i18n="historyTitle">
-          A história da Casa
-        </h2>
-        <p class="section-text" data-i18n="historyText">
-          Com origens no século XIX, a Casa do Fontão mantém a traça original,
-          combinando elementos de pedra, madeira e peças tradicionais, agora
-          adaptadas ao conforto atual.
-        </p>
-      </div>
-    </section> -->
-
+    
     <div class="elfsight-app-36f139eb-a29b-47df-ac40-9d3548a8a093" data-elfsight-app-lazy></div>
 
     <!-- FOOTER -->
