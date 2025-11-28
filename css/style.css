@@ -189,8 +189,7 @@ nav a {
   color: #ffffff;
 }
 
-.topbar:not(.scrolled) .lang-current,
-.topbar:not(.scrolled) .lang-current svg {
+.topbar:not(.scrolled) .lang-current{
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.2);
