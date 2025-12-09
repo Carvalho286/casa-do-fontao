@@ -412,6 +412,7 @@ nav a {
 
 .essencia-img {
   width: 100%;
+  height: 25rem;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -1214,6 +1215,7 @@ nav a {
 /* IMAGEM */
 .eventos-right img {
   width: 100%;
+  height: 50rem;
   border-radius: 6px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   object-fit: cover;
@@ -1560,6 +1562,15 @@ body.contactos-page .topbar .btn-small {
 .footer-bottom .credits {
   font-size: 0.85rem;
   color: #999;
+}
+
+.footer-bottom .credits a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-bottom .credits a:hover {
+  color: #c7a045;
 }
 
 /* --- RESPONSIVO --- */

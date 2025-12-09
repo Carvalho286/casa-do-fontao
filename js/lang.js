@@ -222,7 +222,7 @@ const translations = {
     footerExploreContacts: "Contactos",
     footerContacts: "Contactos",
     footerRights: "© 2025 Casa do Fontão. Todos os direitos reservados.",
-    footerCredits: "Website desenvolvido por Miguel Carvalho",
+    footerCredits: "Website desenvolvido por <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
   },
   en: {
     home: "The house",
@@ -445,7 +445,7 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     footerExploreContacts: "Contacts",
     footerContacts: "Contacts",
     footerRights: "© 2025 Casa do Fontão. All rights reserved.",
-    footerCredits: "Website developed by Miguel Carvalho",
+    footerCredits: "Website developed by <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
   },
   fr: {
     home: "La maison",
@@ -690,7 +690,7 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     footerExploreContacts: "Contacts",
     footerContacts: "Contacts",
     footerRights: "© 2025 Casa do Fontão. Tous droits réservés.",
-    footerCredits: "Site développé par Miguel Carvalho",
+    footerCredits: "Site développé par <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
   },
   es: {
     home: "La casa",
@@ -935,7 +935,7 @@ cada evento se convierte en una experiencia memorable llena de elegancia y auten
     footerExploreContacts: "Contactos",
     footerContacts: "Contactos",
     footerRights: "© 2025 Casa do Fontão. Todos los derechos reservados.",
-    footerCredits: "Sitio web desarrollado por Miguel Carvalho",
+    footerCredits: "Sitio web desarrollado por <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
   },
 };
 
@@ -963,7 +963,12 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      // Use innerHTML for footerCredits to render HTML links
+      if (key === "footerCredits") {
+        el.innerHTML = translations[lang][key];
+      } else {
+        el.textContent = translations[lang][key];
+      }
     }
   });
 
