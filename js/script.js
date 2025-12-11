@@ -13,12 +13,12 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 const quartosData = {
   1: {
     tag: "Homenagem ao Modernismo",
-    title: "Quarto 1",
+    title: "Quarto Duplo com Varanda e Vista Jardim",
     description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Este quarto acolhedor dispõe de uma ampla cama de casal (1.80 x 2.00) com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
+      A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
+      A casa de banho privativa conta com duche, secador de cabelo e amenities de qualidade. O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala bucólica, onde cada detalhe foi pensado para proporcionar uma experiência prazerosa.
     `,
     quote: "Onde a arte encontra o descanso.",
     image: "media/rooms/quarto1.jpg",
@@ -29,137 +29,164 @@ const quartosData = {
     ],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
-    area: "20 m²",
+    area: "21 m²",
+    wc: "Casa de Banho Privada - Duche",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
-      { icon: "products.svg", label: "Produtos de Luxo" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
   2: {
     tag: "Elegância Literária",
-    title: "Quarto 2",
+    title: "Quarto Duplo com Varanda e Vista Jardim",
     description: `
-      Uma homenagem a Agustina Bessa-Luís, este quarto feminino e sofisticado combina delicadeza e força.
-      Texturas suaves e tons dourados convidam ao descanso e à leitura silenciosa.
+      Este quarto acolhedor dispõe de uma ampla cama de casal (1.80 x 2.00) com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
+      A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
+      A casa de banho privativa conta com duche, secador de cabelo e amenities de qualidade. O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala bucólica, onde cada detalhe foi pensado para proporcionar uma experiência prazerosa. 
     `,
     quote: "Cada palavra inspira calma e conforto.",
     image: "media/rooms/quarto2.jpg",
     gallery: ["media/rooms/quarto2b.jpg", "media/rooms/quarto2c.jpg"],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
-    area: "20 m²",
+    area: "21 m²",
+    wc: "Casa de Banho Privada - Duche",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
+      { icon: "air.svg", label: "Ar Condicionado" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
   3: {
-    tag: "Homenagem ao Modernismo",
-    title: "Quarto 3",
+    tag: "Refúgio Familiar Premium",
+    title: "Suite Deluxe com Varanda, Vista Jardim e Vista Montanha",
     description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      A suite mais espaçosa da propriedade — ideal para famílias, é também a suite favorita das noivas para os preparativos do casamento, graças ao seu espaço generoso e atmosfera romântica.
+      Com uma cama de casal (1.80 x 2.00) e colchão de alta qualidade, a suite proporciona um descanso profundo, complementado por lençóis de algodão puro de 300 fios. Ideal para famílias, inclui também um confortável sofá-cama para duas crianças.
+      A luz natural entra pelas amplas janelas, revelando vistas serenas para o bosque e jardim, enquanto a varanda privada oferece um cenário encantador sobre o fontanário — perfeito para relaxar. A casa de banho privativa é ampla e conta com duche, secador de cabelo e amenities selecionados.
+      O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica.
+      Um refúgio onde o luxo discreto e a natureza se unem para uma estadia memorável.
     `,
-    quote: "Onde a arte encontra o descanso.",
+    quote: "Onde a família cria memórias inesquecíveis.",
     image: "media/rooms/quarto3.jpg",
     gallery: ["media/rooms/quarto3b.jpg", "media/rooms/quarto3c.jpg"],
-    capacidade: "2 pessoas",
-    cama: "Cama Queen Size",
-    area: "20 m²",
+    capacidade: "4 pessoas",
+    cama: "Cama Queen Size + Sofá-cama",
+    area: "52 m²",
+    wc: "Casa de Banho Privada - Duche",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
-      { icon: "products.svg", label: "Produtos de Luxo" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
   4: {
-    tag: "Homenagem ao Modernismo",
-    title: "Quarto 4",
+    tag: "Serenidade Romântica",
+    title: "Suite Junior com Banheira e Varanda com Vista Traseira",
     description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Com uma cama de casal ampla (1.80 x 2.00) e colchão de elevada qualidade, a suite garante noites de descanso profundo, envoltas em lençóis de algodão de 300 fios.
+      Dispõe ainda de um sofá-cama adequado para uma criança.
+      A varanda privada oferece uma vista serena e resguardada, enquanto a casa de banho privativa, ampla e luminosa, inclui banheira, secador de cabelo e amenities selecionados. A decoração vintage do quarto cria um ambiente de charme acolhedor.
+      O pequeno-almoço está incluído e é servido numa sala com decoração clássica perfeita para começar o dia com requinte e tranquilidade.
     `,
-    quote: "Onde a arte encontra o descanso.",
+    quote: "Um refúgio de serenidade e romance.",
     image: "media/rooms/quarto4.jpg",
     gallery: [
       "media/rooms/quarto4b.jpg",
       "media/rooms/quarto4d.jpg",
       "media/rooms/quarto4c.jpg",
     ],
-    capacidade: "2 pessoas",
-    cama: "Cama Queen Size",
-    area: "20 m²",
+    capacidade: "3 pessoas",
+    cama: "Cama Queen Size + Sofá-cama",
+    area: "43 m²",
+    wc: "Casa de Banho Privada - Banheira",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
-      { icon: "products.svg", label: "Produtos de Luxo" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
   5: {
-    tag: "Homenagem ao Modernismo",
-    title: "Quarto 5",
+    tag: "Charme Tradicional",
+    title: "Quarto Duplo Superior",
     description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Um Quarto Duplo Superior que combina conforto, serenidade e um encanto romântico.
+      A ampla cama de casal (1.80 x 2.00), com colchão de alta qualidade e lençóis de algodão de 300 fios, proporciona noites de descanso profundo. 
+      A luz natural entra generosamente pela janela do quarto com vista tranquila para o interior da propriedade — perfeita para privacidade.
+      A casa de banho privativa inclui banheira, secador de cabelo e amenities selecionados. Para maior comodidade, o quarto oferece Wi-Fi gratuito, ar condicionado e TV cabo. 
+      A decoração clássica e romântica acrescenta charme e elegância ao ambiente.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica. 
     `,
-    quote: "Onde a arte encontra o descanso.",
+    quote: "Tradição e conforto em perfeita harmonia.",
     image: "media/rooms/quarto5.jpg",
     gallery: ["media/rooms/quarto5b.jpg", "media/rooms/quarto5c.jpg"],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
-    area: "20 m²",
+    area: "30 m²",
+    wc: "Casa de Banho Privada - Banheira",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
-      { icon: "products.svg", label: "Produtos de Luxo" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
   6: {
-    tag: "Homenagem ao Modernismo",
-    title: "Quarto 6",
+    tag: "Elegância Clássica",
+    title: "Quarto Duplo Superior",
     description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      A escolha ideal para quem valoriza independência. Este quarto permite acesso direto ao exterior sem passar pela Recepção, oferecendo total privacidade e conveniência. Prolonga-se até um pequeno pátio exterior, ideal para relaxar ao ar livre ou para fumadores.
+      A cama de casal (1.80 x 2.00), com colchão de alta qualidade e lençóis de algodão de 300 fios, garante noites de descanso profundo. O quarto inclui ainda um sofá-cama, ideal para uma criança ou para momentos de relaxamento.
+      A casa de banho privativa dispõe de duche, secador de cabelo e amenities selecionados. A decoração clássica e romântica acrescenta um charme elegante que evoca épocas de requinte.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica, criando o início perfeito para um dia tranquilo e prazeroso.
     `,
-    quote: "Onde a arte encontra o descanso.",
+    quote: "Elegância atemporal em cada detalhe.",
     image: "media/rooms/quarto6.jpg",
     gallery: ["media/rooms/quarto6b.jpg", "media/rooms/quarto6c.jpg"],
-    capacidade: "2 pessoas",
-    cama: "Cama Queen Size",
-    area: "20 m²",
+    capacidade: "3 pessoas",
+    cama: "Cama Queen Size + Sofá-cama",
+    area: "30 m²",
+    wc: "Casa de Banho Privada - Duche",
     comodidades: [
       { icon: "wifi.svg", label: "Wi-Fi" },
-      { icon: "coffee.svg", label: "Café & Chá" },
       { icon: "air.svg", label: "Ar Condicionado" },
-      { icon: "tv.svg", label: "Smart TV" },
-      { icon: "bathtub.svg", label: "Casa de Banho Privada" },
-      { icon: "products.svg", label: "Produtos de Luxo" },
+      { icon: "outlet.svg", label: "Tomadas perto da cama" },
+      { icon: "tv.svg", label: "Canais por Satélite" },
+      { icon: "fridge.svg", label: "Frigorífico (minibar)" },
+      { icon: "towels.svg", label: "Toalhas" },
+      { icon: "babybed.svg", label: "Berço Disponível" },
+      { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
   },
 };
+
 
 // === GERAR LISTA DE QUARTOS ===
 const grid = document.getElementById("quartos-grid");
@@ -242,14 +269,41 @@ function attachModalI18n() {
       // Atualiza detalhes
       detalhesContainer.innerHTML = `
         <li><strong>${
-          lang === "pt" ? "Capacidade:" : "Capacity:"
+          lang === "pt"
+            ? "Capacidade:"
+            : lang === "en"
+            ? "Capacity:"
+            : lang === "fr"
+            ? "Capacité:"
+            : "Capacidad:"
         }</strong> <span>${traduzido.capacidade}</span></li>
-        <li><strong>${lang === "pt" ? "Cama:" : "Bed:"}</strong> <span>${
-        traduzido.cama
-      }</span></li>
-        <li><strong>${lang === "pt" ? "Área:" : "Area:"}</strong> <span>${
-        traduzido.area
-      }</span></li>
+        <li><strong>${
+          lang === "pt"
+            ? "Cama:"
+            : lang === "en"
+            ? "Bed:"
+            : lang === "fr"
+            ? "Lit:"
+            : "Cama:"
+        }</strong> <span>${traduzido.cama}</span></li>
+        <li><strong>${
+          lang === "pt"
+            ? "Área:"
+            : lang === "en"
+            ? "Area:"
+            : lang === "fr"
+            ? "Zone:"
+            : "Área:"
+        }</strong> <span>${traduzido.area}</span></li>
+        <li><strong>${
+          lang === "pt"
+            ? "WC:"
+            : lang === "en"
+            ? "Bathroom:"
+            : lang === "fr"
+            ? "Salle de bain:"
+            : "Baño:"
+        }</strong> <span>${traduzido.wc}</span></li>
       `;
 
       // Atualiza comodidades
