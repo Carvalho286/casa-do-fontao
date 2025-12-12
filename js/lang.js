@@ -57,132 +57,155 @@ const translations = {
     quartos: {
       1: {
         tag: "Homenagem ao Modernismo",
-        title: "Quarto 1",
+        title: "Quarto Duplo com Varanda e Vista para Jardim",
         description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Este quarto acolhedor dispõe de uma ampla cama de casal com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
+      A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
+      A casa de banho privativa conta com duche, secador de cabelo e amenities de qualidade. O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala bucólica, onde cada detalhe foi pensado para proporcionar uma experiência prazerosa.
     `,
         quote: "Onde a arte encontra o descanso.",
         capacidade: "2 pessoas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Casa de Banho Privada - Duche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
       2: {
         tag: "Elegância Literária",
-        title: "Quarto 2",
+        title: "Quarto Duplo com Varanda e Vista para Jardim",
         description: `
-      Uma homenagem a Agustina Bessa-Luís, este quarto feminino e sofisticado combina delicadeza e força.
-      Texturas suaves e tons dourados convidam ao descanso e à leitura silenciosa.
+      Este quarto acolhedor dispõe de uma ampla cama de casal com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
+      A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
+      A casa de banho privativa conta com duche, secador de cabelo e amenities de qualidade. O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala bucólica, onde cada detalhe foi pensado para proporcionar uma experiência prazerosa. 
     `,
         quote: "Cada palavra inspira calma e conforto.",
         capacidade: "2 pessoas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Casa de Banho Privada - Duche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
       3: {
-        tag: "Homenagem ao Modernismo",
-        title: "Quarto 3",
+        tag: "Refúgio Familiar Premium",
+        title: "Suite Deluxe com Varanda, Vista para Jardim e Montanha",
         description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      A suite mais espaçosa da propriedade — ideal para famílias, é também a suite favorita das noivas para os preparativos do casamento, graças ao seu espaço generoso e atmosfera romântica.
+      Com uma cama de casal e colchão de alta qualidade, a suite proporciona um descanso profundo, complementado por lençóis de algodão puro de 300 fios. Ideal para famílias, inclui também um confortável sofá-cama para duas crianças.
+      A luz natural entra pelas amplas janelas, revelando vistas serenas para o bosque e jardim, enquanto a varanda privada oferece um cenário encantador sobre o fontanário — perfeito para relaxar. A casa de banho privativa é ampla e conta com duche, secador de cabelo e amenities selecionados.
+      O quarto inclui ainda Wi-Fi gratuito, ar condicionado e TV cabo, num ambiente de decoração clássica e romântica.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica.
+      Um refúgio onde o luxo discreto e a natureza se unem para uma estadia memorável.
     `,
-        quote: "Onde a arte encontra o descanso.",
-        capacidade: "2 pessoas",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+        quote: "Onde a família cria memórias inesquecíveis.",
+        capacidade: "4 pessoas",
+        cama: "Cama Queen Size + Sofá-Cama",
+        area: "52 m²",
+        wc: "Casa de Banho Privada - Duche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
       4: {
-        tag: "Homenagem ao Modernismo",
-        title: "Quarto 4",
+        tag: "Serenidade Romântica",
+        title: "Suite Junior com Banheira e Varanda com Vista Traseira",
         description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Com uma cama de casal ampla e colchão de elevada qualidade, a suite garante noites de descanso profundo, envoltas em lençóis de algodão de 300 fios.
+      Dispõe ainda de um sofá-cama adequado para uma criança.
+      A varanda privada oferece uma vista serena e resguardada, enquanto a casa de banho privativa, ampla e luminosa, inclui banheira, secador de cabelo e amenities selecionados. A decoração vintage do quarto cria um ambiente de charme acolhedor.
+      O pequeno-almoço está incluído e é servido numa sala com decoração clássica perfeita para começar o dia com requinte e tranquilidade.
     `,
-        quote: "Onde a arte encontra o descanso.",
-        capacidade: "2 pessoas",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+        quote: "Um refúgio de serenidade e romance.",
+        capacidade: "3 pessoas",
+        cama: "Cama Queen Size + Sofá-cama",
+        area: "43 m²",
+        wc: "Casa de Banho Privada - Banheira",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
       5: {
-        tag: "Homenagem ao Modernismo",
-        title: "Quarto 5",
+        tag: "Charme Tradicional",
+        title: "Quarto Duplo Superior",
         description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      Um Quarto Duplo Superior que combina conforto, serenidade e um encanto romântico, a ampla cama de casal, com colchão de alta qualidade e lençóis de algodão de 300 fios, proporciona noites de descanso profundo. 
+      A luz natural entra generosamente pela janela do quarto com vista tranquila para o interior da propriedade — perfeita para privacidade.
+      A casa de banho privativa inclui banheira, secador de cabelo e amenities selecionados. Para maior comodidade, o quarto oferece Wi-Fi gratuito, ar condicionado e TV cabo. 
+      A decoração clássica e romântica acrescenta charme e elegância ao ambiente.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica. 
     `,
-        quote: "Onde a arte encontra o descanso.",
+        quote: "Tradição e conforto em perfeita harmonia.",
         capacidade: "2 pessoas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "30 m²",
+        wc: "Casa de Banho Privada - Banheira",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
       6: {
-        tag: "Homenagem ao Modernismo",
-        title: "Quarto 6",
+        tag: "Elegância Clássica",
+        title: "Quarto Duplo Superior",
         description: `
-      Inspirado no génio de Amadeo de Souza-Cardoso, este quarto celebra a ousadia criativa do modernismo português.
-      Paredes claras acolhem detalhes coloridos subtis, numa fusão perfeita entre tradição e vanguarda.
-      As janelas amplas deixam entrar a luz matinal, criando um jogo de sombras que Amadeo teria apreciado.
-      Cada detalhe foi pensado para inspirar criatividade e contemplação.
+      A escolha ideal para quem valoriza independência, este quarto permite acesso direto ao exterior sem passar pela Recepção, oferecendo total privacidade e conveniência. Prolonga-se até um pequeno pátio exterior, ideal para relaxar ao ar livre ou para fumadores.
+      A cama de casal, com colchão de alta qualidade e lençóis de algodão de 300 fios, garante noites de descanso profundo. O quarto inclui ainda um sofá-cama, ideal para uma criança ou para momentos de relaxamento.
+      A casa de banho privativa dispõe de duche, secador de cabelo e amenities selecionados. A decoração clássica e romântica acrescenta um charme elegante que evoca épocas de requinte.
+      O pequeno-almoço está incluído e é servido numa sala de inspiração bucólica, criando o início perfeito para um dia tranquilo e prazeroso.
     `,
-        quote: "Onde a arte encontra o descanso.",
-        capacidade: "2 pessoas",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+        quote: "Elegância atemporal em cada detalhe.",
+        capacidade: "3 pessoas",
+        cama: "Cama Queen Size + Sofá-cama",
+        area: "30 m²",
+        wc: "Casa de Banho Privada - Duche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café e Chá",
           air: "Ar condicionado",
-          tv: "Smart TV",
-          bathtub: "Casa de Banho Privada",
-          products: "Produtos de Luxo",
+          outlet: "Tomadas perto da Cama",
+          tv: "Canais por Satélite",
+          fridge: "Frigorífico (minibar)",
+          towels: "Toalhas",
+          babybed: "Berço Disponível",
+          parking: "Estacionamento Grátis",
         },
       },
     },
@@ -222,7 +245,8 @@ const translations = {
     footerExploreContacts: "Contactos",
     footerContacts: "Contactos",
     footerRights: "© 2025 Casa do Fontão. Todos os direitos reservados.",
-    footerCredits: "Website desenvolvido por <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
+    footerCredits:
+      'Website desenvolvido por <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   en: {
     home: "The house",
@@ -282,132 +306,155 @@ const translations = {
     quartos: {
       1: {
         tag: "Tribute to Modernism",
-        title: "Room 1",
+        title: "Double Room with Balcony and Garden View",
         description: `
-    Inspired by the genius of Amadeo de Souza-Cardoso, this room celebrates the creative boldness of Portuguese modernism.
-    Bright walls embrace subtle colorful details, blending tradition and avant-garde in perfect harmony.
-    The wide windows let in the morning light, creating a play of shadows that Amadeo himself would have admired.
-    Every detail was designed to inspire creativity and contemplation.
-  `,
+      This cozy room features a spacious queen-size bed with 100% cotton 300-thread-count linens, ensuring perfectly restful nights.
+      Natural light enters through the window leading to a small balcony overlooking the fountain, pool, and garden — the ideal setting for relaxation.
+      The private bathroom includes a shower, hairdryer, and quality amenities. The room also offers free Wi-Fi, air conditioning, and cable TV in a classic, romantic décor.
+      Breakfast is included and served in a bucolic dining room where every detail has been thoughtfully designed to provide a pleasurable experience.
+    `,
         quote: "Where art meets rest.",
-        capacidade: "2 guests",
+        capacidade: "2 people",
         cama: "Queen Size Bed",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Private Bathroom – Shower",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
       2: {
         tag: "Literary Elegance",
-        title: "Room 2",
+        title: "Double Room with Balcony and Garden View",
         description: `
-    A tribute to Agustina Bessa-Luís — this feminine and sophisticated room combines delicacy and strength.
-    Soft textures and golden tones invite you to rest and quiet reading moments.
-  `,
-        quote: "Every word inspires calm and comfort.",
-        capacidade: "2 guests",
+      This cozy room features a spacious queen-size bed with 100% cotton 300-thread-count linens, ensuring perfectly restful nights.
+      Natural light enters through the window leading to a small balcony overlooking the fountain, pool, and garden — the ideal setting for relaxation.
+      The private bathroom includes a shower, hairdryer, and quality amenities. The room also offers free Wi-Fi, air conditioning, and cable TV in a classic, romantic setting.
+      Breakfast is included and served in a bucolic dining room, carefully designed to offer a soothing experience.
+    `,
+        quote: "Where every word inspires calm and comfort.",
+        capacidade: "2 people",
         cama: "Queen Size Bed",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Private Bathroom – Shower",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
       3: {
-        tag: "Tribute to Modernism",
-        title: "Room 3",
+        tag: "Premium Family Retreat",
+        title: "Deluxe Suite with Balcony and Garden & Mountain View",
         description: `
-    Inspired by the genius of Amadeo de Souza-Cardoso, this room celebrates the creative boldness of Portuguese modernism.
-    Bright walls embrace subtle colorful details, blending tradition and avant-garde in perfect harmony.
-    The wide windows let in the morning light, creating a play of shadows that Amadeo himself would have admired.
-    Every detail was designed to inspire creativity and contemplation.
-  `,
-        quote: "Where art meets rest.",
-        capacidade: "2 guests",
-        cama: "Queen Size Bed",
-        area: "20 m²",
+      The most spacious suite on the property — ideal for families and a favourite among brides preparing for their wedding, thanks to its generous space and romantic atmosphere.
+      Featuring a queen-size bed with a high-quality mattress and 300-thread-count cotton linens, the suite provides deep, restorative sleep. Ideal for families, it also includes a comfortable sofa bed suitable for two children.
+      Natural light floods the large windows, revealing serene views of the woodland and garden, while the private balcony offers an enchanting outlook over the fountain — perfect for relaxing. The private bathroom is spacious and includes a shower, hairdryer, and selected amenities.
+      The suite also offers free Wi-Fi, air conditioning, and cable TV, all within a classic, romantic décor.
+      Breakfast is included and served in a bucolic-inspired dining room.
+      A retreat where understated luxury and nature come together for a memorable stay.
+    `,
+        quote: "Where families create unforgettable memories.",
+        capacidade: "4 people",
+        cama: "Queen Size Bed + Sofa bed",
+        area: "52 m²",
+        wc: "Private Bathroom – Shower",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
       4: {
-        tag: "Tribute to Modernism",
-        title: "Room 4",
+        tag: "Romantic Serenity",
+        title: "Junior Suite with Bathtub and Rear-Facing Balcony",
         description: `
-    Inspired by the genius of Amadeo de Souza-Cardoso, this room celebrates the creative boldness of Portuguese modernism.
-    Bright walls embrace subtle colorful details, blending tradition and avant-garde in perfect harmony.
-    The wide windows let in the morning light, creating a play of shadows that Amadeo himself would have admired.
-    Every detail was designed to inspire creativity and contemplation.
-  `,
-        quote: "Where art meets rest.",
-        capacidade: "2 guests",
-        cama: "Queen Size Bed",
-        area: "20 m²",
+      With a spacious queen-size bed and a high-quality mattress, this suite guarantees deep, restorative nights wrapped in 300-thread-count cotton linens.
+      It also includes a sofa bed suitable for one child.
+      The private balcony offers a serene and secluded view, while the bright, private bathroom features a bathtub, hairdryer, and selected amenities. The vintage décor creates a warm, charming atmosphere.
+      Breakfast is included and served in a classically decorated room, perfect for starting the day with refinement and tranquility.
+    `,
+        quote: "A refuge of serenity and romance.",
+        capacidade: "3 people",
+        cama: "Queen Size Bed + Sofa bed",
+        area: "43 m²",
+        wc: "Private Bathroom – Bathtub",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
       5: {
-        tag: "Tribute to Modernism",
-        title: "Room 5",
+        tag: "Traditional Charm",
+        title: "Superior Double Room",
         description: `
-    Inspired by the genius of Amadeo de Souza-Cardoso, this room celebrates the creative boldness of Portuguese modernism.
-    Bright walls embrace subtle colorful details, blending tradition and avant-garde in perfect harmony.
-    The wide windows let in the morning light, creating a play of shadows that Amadeo himself would have admired.
-    Every detail was designed to inspire creativity and contemplation.
-  `,
-        quote: "Where art meets rest.",
-        capacidade: "2 guests",
+      A Superior Double Room that combines comfort, serenity, and romantic charm. The spacious queen-size bed with a high-quality mattress and 300-thread-count cotton linens ensures deeply restful nights.
+      Natural light gently enters through the window overlooking the quiet inner courtyard — perfect for privacy.
+      The private bathroom includes a bathtub, hairdryer, and selected amenities. For added convenience, the room offers free Wi-Fi, air conditioning, and cable TV.
+      The classic, romantic décor enhances the atmosphere with elegance and charm.
+      Breakfast is included and served in a bucolic-inspired dining room.
+    `,
+        quote: "Tradition and comfort in perfect harmony.",
+        capacidade: "2 people",
         cama: "Queen Size Bed",
-        area: "20 m²",
+        area: "30 m²",
+        wc: "Private Bathroom – Bathtub",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
       6: {
-        tag: "Tribute to Modernism",
-        title: "Room 6",
+        tag: "Classic Elegance",
+        title: "Superior Double Room with Patio Access",
         description: `
-    Inspired by the genius of Amadeo de Souza-Cardoso, this room celebrates the creative boldness of Portuguese modernism.
-    Bright walls embrace subtle colorful details, blending tradition and avant-garde in perfect harmony.
-    The wide windows let in the morning light, creating a play of shadows that Amadeo himself would have admired.
-    Every detail was designed to inspire creativity and contemplation.
-  `,
-        quote: "Where art meets rest.",
-        capacidade: "2 guests",
-        cama: "Queen Size Bed",
-        area: "20 m²",
+      The ideal choice for guests who value independence, this room offers direct outdoor access without passing through Reception, ensuring total privacy and convenience. It extends onto a small outdoor patio, perfect for relaxing in the open air or for smokers.
+      The queen-size bed with a high-quality mattress and 300-thread-count cotton linens guarantees deeply restful nights. The room also includes a sofa bed, ideal for a child or for relaxing.
+      The private bathroom features a shower, hairdryer, and selected amenities. The classic, romantic décor adds an elegant charm that evokes a bygone era of refinement.
+      Breakfast is included and served in a bucolic-inspired dining room, creating the perfect start to a peaceful and pleasant day.
+    `,
+        quote: "Timeless elegance in every detail.",
+        capacidade: "3 people",
+        cama: "Queen Size Bed + Sofa bed",
+        area: "30 m²",
+        wc: "Private Bathroom – Shower",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Coffee and Tea",
-          air: "Air Conditioning",
-          tv: "Smart TV",
-          bathtub: "Private Bathroom",
-          products: "Luxury Products",
+          air: "Air conditioning",
+          outlet: "Sockets near the bed",
+          tv: "Satellite channels",
+          fridge: "Mini-fridge (minibar)",
+          towels: "Towels",
+          babybed: "Baby cot available",
+          parking: "Free parking",
         },
       },
     },
@@ -445,7 +492,8 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     footerExploreContacts: "Contacts",
     footerContacts: "Contacts",
     footerRights: "© 2025 Casa do Fontão. All rights reserved.",
-    footerCredits: "Website developed by <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
+    footerCredits:
+      'Website developed by <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   fr: {
     home: "La maison",
@@ -516,137 +564,155 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     quartos: {
       1: {
         tag: "Hommage au Modernisme",
-        title: "Chambre 1",
+        title: "Chambre Double avec Balcon et Vue sur le Jardin",
         description: `
-Inspirée par le génie d’Amadeo de Souza-Cardoso, cette chambre célèbre l’audace créative du modernisme portugais.
-Les murs lumineux accueillent des touches de couleur subtiles, mêlant tradition et avant-garde en parfaite harmonie.
-Les grandes fenêtres laissent entrer la lumière du matin, créant un jeu d’ombres qu’Amadeo lui-même aurait admiré.
-Chaque détail a été conçu pour inspirer créativité et contemplation.
-      `,
+      Cette chambre chaleureuse dispose d’un grand lit double avec draps 100 % coton, 300 fils, garantissant des nuits de repos absolu.
+      La lumière naturelle traverse la fenêtre donnant accès à un petit balcon avec vue sur le fontaine, la piscine et le jardin — un cadre idéal pour se détendre.
+      La salle de bain privée comprend une douche, un sèche-cheveux et des produits d’accueil de qualité. La chambre offre également le Wi-Fi gratuit, la climatisation et la télévision par câble, dans une décoration classique et romantique.
+      Le petit-déjeuner est inclus et servi dans une salle au charme bucolique, où chaque détail a été pensé pour offrir une expérience agréable.
+    `,
         quote: "Là où l’art rencontre le repos.",
         capacidade: "2 personnes",
         cama: "Lit Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Salle de bain privée – Douche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
-
       2: {
         tag: "Élégance Littéraire",
-        title: "Chambre 2",
+        title: "Chambre Double avec Balcon et Vue sur le Jardin",
         description: `
-Un hommage à Agustina Bessa-Luís — cette chambre féminine et sophistiquée allie délicatesse et force.
-Les textures douces et les tons dorés invitent au repos et aux moments de lecture tranquille.
-      `,
-        quote: "Chaque mot inspire calme et confort.",
+      Cette chambre chaleureuse dispose d’un grand lit double avec draps 100 % coton, 300 fils, garantissant des nuits de repos absolu.
+      La lumière naturelle traverse la fenêtre donnant accès à un petit balcon avec vue sur le fontaine, la piscine et le jardin — un cadre idéal pour se détendre.
+      La salle de bain privée comprend une douche, un sèche-cheveux et des produits d’accueil de qualité. La chambre offre également le Wi-Fi gratuit, la climatisation et la télévision par câble, dans une ambiance classique et romantique.
+      Le petit-déjeuner est inclus et servi dans une salle au charme bucolique, conçue pour offrir une expérience apaisante.
+    `,
+        quote: "Chaque mot inspire le calme et le confort.",
         capacidade: "2 personnes",
         cama: "Lit Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Salle de bain privée – Douche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
-
       3: {
-        tag: "Hommage au Modernisme",
-        title: "Chambre 3",
+        tag: "Refuge Familial Premium",
+        title: "Suite Deluxe avec Balcon et Vue sur le Jardin et la Montagne",
         description: `
-Inspirée par le génie d’Amadeo de Souza-Cardoso, cette chambre célèbre l’audace créative du modernisme portugais.
-Les murs lumineux accueillent des touches de couleur subtiles, mêlant tradition et avant-garde en parfaite harmonie.
-Les grandes fenêtres laissent entrer la lumière du matin, créant un jeu d’ombres qu’Amadeo lui-même aurait admiré.
-Chaque détail a été conçu pour inspirer créativité et contemplation.
-      `,
-        quote: "Là où l’art rencontre le repos.",
-        capacidade: "2 personnes",
-        cama: "Lit Queen Size",
-        area: "20 m²",
+      La suite la plus spacieuse de la propriété — idéale pour les familles, elle est également la préférée des mariées pour les préparatifs de mariage, grâce à son espace généreux et son atmosphère romantique.
+      Dotée d’un lit double avec matelas de haute qualité et draps en coton 300 fils, la suite assure un repos profond. Idéale pour les familles, elle comprend également un canapé-lit confortable pour deux enfants.
+      La lumière naturelle inonde les grandes fenêtres, révélant des vues sereines sur le bois et le jardin, tandis que le balcon privé offre un décor enchanteur sur le fontaine — parfait pour se détendre. La salle de bain privée, spacieuse, comprend une douche, un sèche-cheveux et des produits d’accueil sélectionnés.
+      La suite offre également le Wi-Fi gratuit, la climatisation et la télévision par câble, dans une décoration classique et romantique.
+      Le petit-déjeuner est inclus et servi dans une salle à l’inspiration bucolique.
+      Un refuge où le luxe discret et la nature se rencontrent pour un séjour mémorable.
+    `,
+        quote: "Là où la famille crée des souvenirs inoubliables.",
+        capacidade: "4 personnes",
+        cama: "Lit Queen Size + Canapé-lit",
+        area: "52 m²",
+        wc: "Salle de bain privée – Douche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
-
       4: {
-        tag: "Hommage au Modernisme",
-        title: "Chambre 4",
+        tag: "Sérénité Romantique",
+        title: "Suite Junior avec Baignoire et Balcon sur l’Arrière",
         description: `
-Inspirée par le génie d’Amadeo de Souza-Cardoso, cette chambre célèbre l’audace créative du modernisme portugais.
-Les murs lumineux accueillent des touches de couleur subtiles, mêlant tradition et avant-garde en parfaite harmonie.
-Les grandes fenêtres laissent entrer la lumière du matin, créant un jeu d’ombres qu’Amadeo lui-même aurait admiré.
-Chaque détail a été conçu pour inspirer créativité et contemplation.
-      `,
-        quote: "Là où l’art rencontre le repos.",
-        capacidade: "2 personnes",
-        cama: "Lit Queen Size",
-        area: "20 m²",
+      Avec un grand lit double et un matelas de haute qualité, la suite garantit des nuits de repos profond, enveloppées de draps en coton 300 fils.
+      Elle dispose également d’un canapé-lit adapté pour un enfant.
+      Le balcon privé offre une vue sereine et préservée, tandis que la salle de bain privée, spacieuse et lumineuse, comprend une baignoire, un sèche-cheveux et des produits d’accueil sélectionnés. La décoration vintage crée une atmosphère chaleureuse et pleine de charme.
+      Le petit-déjeuner est inclus et servi dans une salle à la décoration classique, idéale pour commencer la journée avec raffinement et tranquillité.
+    `,
+        quote: "Un refuge de sérénité et de romance.",
+        capacidade: "3 personnes",
+        cama: "Lit Queen Size + Canapé-lit",
+        area: "43 m²",
+        wc: "Salle de bain privée – Baignoire",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
-
       5: {
-        tag: "Hommage au Modernisme",
-        title: "Chambre 5",
+        tag: "Charme Traditionnel",
+        title: "Chambre Double Supérieure",
         description: `
-Inspirée par le génie d’Amadeo de Souza-Cardoso, cette chambre célèbre l’audace créative du modernisme portugais.
-Les murs lumineux accueillent des touches de couleur subtiles, mêlant tradition et avant-garde en parfaite harmonie.
-Les grandes fenêtres laissent entrer la lumière du matin, créant un jeu d’ombres qu’Amadeo lui-même aurait admiré.
-Chaque détail a été conçu pour inspirer créativité et contemplation.
-      `,
-        quote: "Là où l’art rencontre le repos.",
+      Une Chambre Double Supérieure qui associe confort, sérénité et charme romantique. Le grand lit double, avec matelas de haute qualité et draps en coton 300 fils, assure des nuits de repos profond.
+      La lumière naturelle entre généreusement par la fenêtre avec vue tranquille sur l’intérieur de la propriété — parfaite pour préserver l’intimité.
+      La salle de bain privée comprend une baignoire, un sèche-cheveux et des produits d’accueil sélectionnés. Pour plus de confort, la chambre offre le Wi-Fi gratuit, la climatisation et la télévision par câble.
+      La décoration classique et romantique ajoute une touche d’élégance et de charme.
+      Le petit-déjeuner est inclus et servi dans une salle à l’inspiration bucolique.
+    `,
+        quote: "Tradition et confort en parfaite harmonie.",
         capacidade: "2 personnes",
         cama: "Lit Queen Size",
-        area: "20 m²",
+        area: "30 m²",
+        wc: "Salle de bain privée – Baignoire",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
-
       6: {
-        tag: "Hommage au Modernisme",
-        title: "Chambre 6",
+        tag: "Élégance Classique",
+        title: "Chambre Double Supérieure avec Accès au Patio",
         description: `
-Inspirée par le génie d’Amadeo de Souza-Cardoso, cette chambre célèbre l’audace créative du modernisme portugais.
-Les murs lumineux accueillent des touches de couleur subtiles, mêlant tradition et avant-garde en parfaite harmonie.
-Les grandes fenêtres laissent entrer la lumière du matin, créant un jeu d’ombres qu’Amadeo lui-même aurait admiré.
-Chaque détail a été conçu pour inspirer créativité et contemplation.
-      `,
-        quote: "Là où l’art rencontre le repos.",
-        capacidade: "2 personnes",
-        cama: "Lit Queen Size",
-        area: "20 m²",
+      Le choix idéal pour ceux qui apprécient l’indépendance, cette chambre offre un accès direct à l’extérieur sans passer par la Réception, garantissant une intimité et une commodité totales. Elle s’ouvre sur un petit patio extérieur, idéal pour se détendre en plein air ou pour les fumeurs.
+      Le lit double, avec matelas de haute qualité et draps en coton 300 fils, garantit des nuits de repos profond. La chambre comprend également un canapé-lit, idéal pour un enfant ou pour des moments de détente.
+      La salle de bain privée dispose d’une douche, d’un sèche-cheveux et de produits d’accueil sélectionnés. La décoration classique et romantique apporte un charme élégant qui évoque une époque de raffinement.
+      Le petit-déjeuner est inclus et servi dans une salle à l’inspiration bucolique, offrant un début de journée paisible et agréable.
+    `,
+        quote: "Une élégance intemporelle dans chaque détail.",
+        capacidade: "3 personnes",
+        cama: "Lit Queen Size + Canapé-lit",
+        area: "30 m²",
+        wc: "Salle de bain privée – Douche",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café et Thé",
           air: "Climatisation",
-          tv: "Smart TV",
-          bathtub: "Salle de bain privée",
-          products: "Produits de luxe",
+          outlet: "Prises près du lit",
+          tv: "Chaînes satellite",
+          fridge: "Mini-réfrigérateur (minibar)",
+          towels: "Serviettes",
+          babybed: "Lit bébé disponible",
+          parking: "Parking gratuit",
         },
       },
     },
@@ -690,7 +756,8 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     footerExploreContacts: "Contacts",
     footerContacts: "Contacts",
     footerRights: "© 2025 Casa do Fontão. Tous droits réservés.",
-    footerCredits: "Site développé par <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
+    footerCredits:
+      'Site développé par <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   es: {
     home: "La casa",
@@ -761,137 +828,155 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     quartos: {
       1: {
         tag: "Homenaje al Modernismo",
-        title: "Habitación 1",
+        title: "Habitación Doble con Balcón y Vista al Jardín",
         description: `
-Inspirada en el genio de Amadeo de Souza-Cardoso, esta habitación celebra la audacia creativa del modernismo portugués.
-Las paredes luminosas abrazan sutiles detalles de color, mezclando tradición y vanguardia en perfecta armonía.
-Los amplios ventanales dejan entrar la luz de la mañana, creando un juego de sombras que el propio Amadeo habría admirado.
-Cada detalle ha sido diseñado para inspirar creatividad y contemplación.
-      `,
-        quote: "Donde el arte se encuentra con el descanso.",
-        capacidade: "2 huéspedes",
+      Esta acogedora habitación cuenta con una amplia cama doble con sábanas 100 % algodón de 300 hilos, lo que garantiza noches de descanso absoluto.
+      La luz natural entra por la ventana que da acceso a un pequeño balcón con vistas a la fuente, la piscina y el jardín — el entorno ideal para relajarse.
+      El baño privado dispone de ducha, secador de pelo y amenities de calidad. La habitación también incluye Wi-Fi gratuito, aire acondicionado y TV por cable, en un ambiente de decoración clásica y romántica.
+      El desayuno está incluido y se sirve en una sala de estilo bucólico, donde cada detalle ha sido pensado para proporcionar una experiencia placentera.
+    `,
+        quote: "Donde el arte encuentra el descanso.",
+        capacidade: "2 personas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Baño privado – Ducha",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
-
       2: {
         tag: "Elegancia Literaria",
-        title: "Habitación 2",
+        title: "Habitación Doble con Balcón y Vista al Jardín",
         description: `
-Un homenaje a Agustina Bessa-Luís — esta habitación femenina y sofisticada combina delicadeza y fuerza.
-Las texturas suaves y los tonos dorados invitan al descanso y a tranquilos momentos de lectura.
-      `,
+      Esta acogedora habitación cuenta con una amplia cama doble con sábanas 100 % algodón de 300 hilos, lo que garantiza noches de descanso absoluto.
+      La luz natural entra por la ventana que da acceso a un pequeño balcón con vistas a la fuente, la piscina y el jardín — un entorno perfecto para relajarse.
+      El baño privado dispone de ducha, secador de pelo y amenities de calidad. La habitación también incluye Wi-Fi gratuito, aire acondicionado y TV por cable, en un ambiente clásico y romántico.
+      El desayuno está incluido y se sirve en una sala de inspiración bucólica, diseñada para ofrecer una experiencia relajante.
+    `,
         quote: "Cada palabra inspira calma y confort.",
-        capacidade: "2 huéspedes",
+        capacidade: "2 personas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "21 m²",
+        wc: "Baño privado – Ducha",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
-
       3: {
-        tag: "Homenaje al Modernismo",
-        title: "Habitación 3",
+        tag: "Refugio Familiar Premium",
+        title: "Suite Deluxe con Balcón y Vista al Jardín y la Montaña",
         description: `
-Inspirada en el genio de Amadeo de Souza-Cardoso, esta habitación celebra la audacia creativa del modernismo portugués.
-Las paredes luminosas abrazan sutiles detalles de color, mezclando tradición y vanguardia en perfecta armonía.
-Los amplios ventanales dejan entrar la luz de la mañana, creando un juego de sombras que Amadeo habría admirado.
-Cada detalle ha sido diseñado para inspirar creatividad y contemplación.
-      `,
-        quote: "Donde el arte se encuentra con el descanso.",
-        capacidade: "2 huéspedes",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+      La suite más amplia de la propiedad — ideal para familias, y también la favorita de las novias para los preparativos de la boda, gracias a su generoso espacio y atmósfera romántica.
+      Con una cama doble y colchón de alta calidad, la suite ofrece un descanso profundo, complementado con sábanas de algodón de 300 hilos. Ideal para familias, también incluye un cómodo sofá cama para dos niños.
+      La luz natural entra por los amplios ventanales, revelando vistas serenas al bosque y al jardín, mientras que el balcón privado ofrece un escenario encantador sobre la fuente — perfecto para relajarse. El baño privado es amplio y dispone de ducha, secador de pelo y amenities seleccionados.
+      La suite también incluye Wi-Fi gratuito, aire acondicionado y TV por cable, en un ambiente de decoración clásica y romántica.
+      El desayuno está incluido y se sirve en una sala de inspiración bucólica.
+      Un refugio donde el lujo discreto y la naturaleza se unen para una estancia memorable.
+    `,
+        quote: "Donde la familia crea recuerdos inolvidables.",
+        capacidade: "4 personas",
+        cama: "Cama Queen Size + Sofá cama",
+        area: "52 m²",
+        wc: "Baño privado – Ducha",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
-
       4: {
-        tag: "Homenaje al Modernismo",
-        title: "Habitación 4",
+        tag: "Serenidad Romántica",
+        title: "Suite Junior con Bañera y Balcón con Vista Trasera",
         description: `
-Inspirada en el genio de Amadeo de Souza-Cardoso, esta habitación celebra la audacia creativa del modernismo portugués.
-Las paredes luminosas abrazan sutiles detalles de color, mezclando tradición y vanguardia en perfecta armonía.
-Los amplios ventanales dejan entrar la luz de la mañana, creando un juego de sombras que Amadeo habría admirado.
-Cada detalle ha sido diseñado para inspirar creatividad y contemplación.
-      `,
-        quote: "Donde el arte se encuentra con el descanso.",
-        capacidade: "2 huéspedes",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+      Con una amplia cama doble y un colchón de alta calidad, la suite garantiza noches de descanso profundo, envueltas en sábanas de algodón de 300 hilos.
+      También dispone de un sofá cama adecuado para un niño.
+      El balcón privado ofrece una vista serena y resguardada, mientras que el baño privado, amplio y luminoso, incluye bañera, secador de pelo y amenities seleccionados. La decoración vintage crea un ambiente acogedor y lleno de encanto.
+      El desayuno está incluido y se sirve en una sala de decoración clásica, perfecta para comenzar el día con elegancia y tranquilidad.
+    `,
+        quote: "Un refugio de serenidad y romance.",
+        capacidade: "3 personas",
+        cama: "Cama Queen Size + Sofá cama",
+        area: "43 m²",
+        wc: "Baño privado – Bañera",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
-
       5: {
-        tag: "Homenaje al Modernismo",
-        title: "Habitación 5",
+        tag: "Encanto Tradicional",
+        title: "Habitación Doble Superior",
         description: `
-Inspirada en el genio de Amadeo de Souza-Cardoso, esta habitación celebra la audacia creativa del modernismo portugués.
-Las paredes luminosas abrazan sutiles detalles de color, mezclando tradición y vanguardia en perfecta armonía.
-Los amplios ventanales dejan entrar la luz de la mañana, creando un juego de sombras que Amadeo habría admirado.
-Cada detalle ha sido diseñado para inspirar creatividad y contemplación.
-      `,
-        quote: "Donde el arte se encuentra con el descanso.",
-        capacidade: "2 huéspedes",
+      Una Habitación Doble Superior que combina confort, serenidad y un encanto romántico. La amplia cama doble, con colchón de alta calidad y sábanas de algodón de 300 hilos, proporciona noches de descanso profundo.
+      La luz natural entra generosamente por la ventana del dormitorio, con una vista tranquila al interior de la propiedad — ideal para quienes buscan privacidad.
+      El baño privado incluye bañera, secador de pelo y amenities seleccionados. Para mayor comodidad, la habitación ofrece Wi-Fi gratuito, aire acondicionado y TV por cable.
+      La decoración clásica y romántica añade elegancia y encanto al ambiente.
+      El desayuno está incluido y se sirve en una sala de inspiración bucólica.
+    `,
+        quote: "Tradición y confort en perfecta armonía.",
+        capacidade: "2 personas",
         cama: "Cama Queen Size",
-        area: "20 m²",
+        area: "30 m²",
+        wc: "Baño privado – Bañera",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
-
       6: {
-        tag: "Homenaje al Modernismo",
-        title: "Habitación 6",
+        tag: "Elegancia Clásica",
+        title: "Habitación Doble Superior con Acceso al Patio",
         description: `
-Inspirada en el genio de Amadeo de Souza-Cardoso, esta habitación celebra la audacia creativa del modernismo portugués.
-Las paredes luminosas abrazan sutiles detalles de color, mezclando tradición y vanguardia en perfecta armonía.
-Los amplios ventanales dejan entrar la luz de la mañana, creando un juego de sombras que Amadeo habría admirado.
-Cada detalle ha sido diseñado para inspirar creatividad y contemplación.
-      `,
-        quote: "Donde el arte se encuentra con el descanso.",
-        capacidade: "2 huéspedes",
-        cama: "Cama Queen Size",
-        area: "20 m²",
+      La opción ideal para quienes valoran la independencia, esta habitación permite acceso directo al exterior sin pasar por la recepción, ofreciendo total privacidad y comodidad. Se prolonga hacia un pequeño patio exterior, ideal para relajarse al aire libre o para fumadores.
+      La cama doble, con colchón de alta calidad y sábanas de algodón de 300 hilos, garantiza noches de descanso profundo. La habitación también incluye un sofá cama, ideal para un niño o para momentos de relax.
+      El baño privado dispone de ducha, secador de pelo y amenities seleccionados. La decoración clásica y romántica añade un toque de elegancia que evoca épocas de refinamiento.
+      El desayuno está incluido y se sirve en una sala de inspiración bucólica, creando el inicio perfecto para un día tranquilo y agradable.
+    `,
+        quote: "Elegancia atemporal en cada detalle.",
+        capacidade: "3 personas",
+        cama: "Cama Queen Size + Sofá cama",
+        area: "30 m²",
+        wc: "Baño privado – Ducha",
         comodidades: {
           wifi: "Wi-Fi",
-          cafe: "Café y Té",
-          air: "Aire Acondicionado",
-          tv: "Smart TV",
-          bathtub: "Baño Privado",
-          products: "Productos de Lujo",
+          air: "Aire acondicionado",
+          outlet: "Enchufes cerca de la cama",
+          tv: "Canales vía satélite",
+          fridge: "Mininevera (minibar)",
+          towels: "Toallas",
+          babybed: "Cuna disponible",
+          parking: "Aparcamiento gratuito",
         },
       },
     },
@@ -935,7 +1020,8 @@ cada evento se convierte en una experiencia memorable llena de elegancia y auten
     footerExploreContacts: "Contactos",
     footerContacts: "Contactos",
     footerRights: "© 2025 Casa do Fontão. Todos los derechos reservados.",
-    footerCredits: "Sitio web desarrollado por <a href=\"https://carvalho286.dev\" target=\"_blank\">Miguel Carvalho</a>",
+    footerCredits:
+      'Sitio web desarrollado por <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
 };
 

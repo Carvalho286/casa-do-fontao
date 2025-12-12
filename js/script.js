@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 const quartosData = {
   1: {
     tag: "Homenagem ao Modernismo",
-    title: "Quarto Duplo com Varanda e Vista Jardim",
+    title: "Quarto Duplo com Varanda e Vista para Jardim",
     description: `
       Este quarto acolhedor dispõe de uma ampla cama de casal (1.80 x 2.00) com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
       A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
@@ -44,7 +44,7 @@ const quartosData = {
   },
   2: {
     tag: "Elegância Literária",
-    title: "Quarto Duplo com Varanda e Vista Jardim",
+    title: "Quarto Duplo com Varanda e Vista para Jardim",
     description: `
       Este quarto acolhedor dispõe de uma ampla cama de casal (1.80 x 2.00) com lençóis 100% algodão de 300 fios, garantindo noites de descanso absoluto.
       A luz natural entra pela janela que dá acesso a uma pequena varanda com vista para o fontanário, piscina e jardim — o cenário ideal para relaxar.
@@ -71,7 +71,7 @@ const quartosData = {
   },
   3: {
     tag: "Refúgio Familiar Premium",
-    title: "Suite Deluxe com Varanda, Vista Jardim e Vista Montanha",
+    title: "Suite Deluxe com Varanda, Vista para Jardim e Montanha",
     description: `
       A suite mais espaçosa da propriedade — ideal para famílias, é também a suite favorita das noivas para os preparativos do casamento, graças ao seu espaço generoso e atmosfera romântica.
       Com uma cama de casal (1.80 x 2.00) e colchão de alta qualidade, a suite proporciona um descanso profundo, complementado por lençóis de algodão puro de 300 fios. Ideal para famílias, inclui também um confortável sofá-cama para duas crianças.
