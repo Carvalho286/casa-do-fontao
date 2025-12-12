@@ -410,7 +410,7 @@ const translations = {
         tag: "Traditional Charm",
         title: "Superior Double Room",
         description: `
-      A Superior Double Room that combines comfort, serenity, and romantic charm. The spacious queen-size bed with a high-quality mattress and 300-thread-count cotton linens ensures deeply restful nights.
+      A Superior Double Room that combines comfort, serenity, and romantic charm, the spacious queen-size bed with a high-quality mattress and 300-thread-count cotton linens ensures deeply restful nights.
       Natural light gently enters through the window overlooking the quiet inner courtyard — perfect for privacy.
       The private bathroom includes a bathtub, hairdryer, and selected amenities. For added convenience, the room offers free Wi-Fi, air conditioning, and cable TV.
       The classic, romantic décor enhances the atmosphere with elegance and charm.
@@ -668,7 +668,7 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
         tag: "Charme Traditionnel",
         title: "Chambre Double Supérieure",
         description: `
-      Une Chambre Double Supérieure qui associe confort, sérénité et charme romantique. Le grand lit double, avec matelas de haute qualité et draps en coton 300 fils, assure des nuits de repos profond.
+      Une Chambre Double Supérieure qui associe confort, sérénité et charme romantique, le grand lit double, avec matelas de haute qualité et draps en coton 300 fils, assure des nuits de repos profond.
       La lumière naturelle entre généreusement par la fenêtre avec vue tranquille sur l’intérieur de la propriété — parfaite pour préserver l’intimité.
       La salle de bain privée comprend une baignoire, un sèche-cheveux et des produits d’accueil sélectionnés. Pour plus de confort, la chambre offre le Wi-Fi gratuit, la climatisation et la télévision par câble.
       La décoration classique et romantique ajoute une touche d’élégance et de charme.
@@ -932,7 +932,7 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
         tag: "Encanto Tradicional",
         title: "Habitación Doble Superior",
         description: `
-      Una Habitación Doble Superior que combina confort, serenidad y un encanto romántico. La amplia cama doble, con colchón de alta calidad y sábanas de algodón de 300 hilos, proporciona noches de descanso profundo.
+      Una Habitación Doble Superior que combina confort, serenidad y un encanto romántico, la amplia cama doble, con colchón de alta calidad y sábanas de algodón de 300 hilos, proporciona noches de descanso profundo.
       La luz natural entra generosamente por la ventana del dormitorio, con una vista tranquila al interior de la propiedad — ideal para quienes buscan privacidad.
       El baño privado incluye bañera, secador de pelo y amenities seleccionados. Para mayor comodidad, la habitación ofrece Wi-Fi gratuito, aire acondicionado y TV por cable.
       La decoración clásica y romántica añade elegancia y encanto al ambiente.
