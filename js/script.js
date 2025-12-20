@@ -407,10 +407,3 @@ if (activeOption) {
   activeOption.classList.add("active");
   currentLangSpan.textContent = savedLang.toUpperCase();
 }
-
-const v = document.querySelector("video");
-if (v) {
-  v.play().catch(() => {
-    document.documentElement.classList.add("no-video");
-  })
-}
