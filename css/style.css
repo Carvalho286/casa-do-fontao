@@ -1588,3 +1588,11 @@ body.contactos-page .topbar .btn-small {
     justify-content: center;
   }
 }
+
+.no-video video {
+  display: none;
+}
+
+.no-video .hero-fallback {
+  display: block;
+}
