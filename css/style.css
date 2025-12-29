@@ -1160,6 +1160,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .evento-icon img {
@@ -1173,6 +1174,8 @@ nav a {
   font-size: 1.2rem;
   color: #5a6350;
   margin-bottom: 0.4rem;
+  margin-right: -20%;
+  margin-top: 10%;
 }
 
 .evento-info ul {
