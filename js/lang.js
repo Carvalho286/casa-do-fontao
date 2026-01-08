@@ -12,6 +12,7 @@ const translations = {
     heroTagline: "Casa de Turismo Rural",
     welcomeText: "Um retiro de charme onde tradição e conforto se encontram.",
     bookNow: "Reservar",
+    bookThisRoom: "Reservar Este Quarto",
     discoverHouse: "Descobrir a casa",
     essenceTitle: "A essência da Casa do Fontão",
     essenceText1:
@@ -261,6 +262,7 @@ const translations = {
     heroTagline: "Rural Tourism House",
     welcomeText: "A charming retreat where tradition meets comfort.",
     bookNow: "Book Now",
+    bookThisRoom: "Book This Room",
     discoverHouse: "Discover the house",
     essenceTitle: "The essence of Casa do Fontão",
     essenceText1:
@@ -508,6 +510,7 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     heroTagline: "Maison de Tourisme Rural",
     welcomeText: "Un refuge charmant où la tradition rencontre le confort.",
     bookNow: "Réserver",
+    bookThisRoom: "Réserver Cette Chambre",
     discoverHouse: "Découvrir la maison",
 
     essenceTitle: "L’essence de la Casa do Fontão",
@@ -773,6 +776,7 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     welcomeText:
       "Un refugio encantador donde la tradición se encuentra con el confort.",
     bookNow: "Reservar",
+    bookThisRoom: "Reservar Esta Habitación",
     discoverHouse: "Descubrir la casa",
 
     essenceTitle: "La esencia de Casa do Fontão",

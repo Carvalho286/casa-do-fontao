@@ -41,6 +41,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=121965",
   },
   2: {
     tag: "Elegância Literária",
@@ -68,6 +69,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=122017",
   },
   3: {
     tag: "Refúgio Familiar Premium",
@@ -97,6 +99,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=122018",
   },
   4: {
     tag: "Serenidade Romântica",
@@ -128,6 +131,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=122019",
   },
   5: {
     tag: "Charme Tradicional",
@@ -157,6 +161,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=122020",
   },
   6: {
     tag: "Elegância Clássica",
@@ -184,6 +189,7 @@ const quartosData = {
       { icon: "babybed.svg", label: "Berço Disponível" },
       { icon: "parking.svg", label: "Estacionamento Grátis" },
     ],
+    link: "https://booking.roomraccoon.pt/casadofontao/pt/?roomTypes=122021",
   },
 };
 
@@ -322,6 +328,12 @@ function attachModalI18n() {
     `;
         })
         .join("");
+
+      // Atualiza link do botão de reserva
+      const bookingBtn = document.getElementById("modal-booking-btn");
+      if (bookingBtn && quarto.link) {
+        bookingBtn.href = quarto.link;
+      }
 
       // Mostra modal
       modal.classList.remove("hidden");
