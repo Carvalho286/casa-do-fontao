@@ -32,12 +32,12 @@ const translations = {
     experience1Text:
       "Jantares intimistas à luz de velas, onde cada prato conta uma história. Ingredientes locais transformados em memórias que se saboreiam lentamente.",
     experience1Quote: "A mesa como palco de encontros",
-    experience2Type: "Entre o Bosque e o Rio",
+    experience2Type: "Entre as Serras e o Rio",
     experience2Title: "Passeios na Natureza",
     experience2Text:
       "O bosque em frente à casa convida-o a perder-se entre árvores centenárias. Ao amanhecer, quando a névoa dança sobre o Tâmega, descubra trilhos secretos e momentos de contemplação pura.",
     experience2Quote: "Onde o tempo se mede em respirações",
-    experience3Type: "Património de Amarante",
+    experience3Type: "Amarante - Património com História",
     experience3Title: "Experiências Culturais",
     experience3Text:
       "Percorra as pegadas de Amadeu de Souza-Cardoso, Teixeira de Pascoaes e Agustina Bessa-Luís. Visitas guiadas que revelam a alma artística e literária desta terra, onde cada rua é um verso.",
@@ -283,12 +283,12 @@ const translations = {
     experience1Text:
       "Intimate candlelit dinners where every dish tells a story. Local ingredients transformed into memories to be savored slowly.",
     experience1Quote: "The table, a stage for encounters",
-    experience2Type: "Between the Woods and the River",
+    experience2Type: "Between the Mountains and the River",
     experience2Title: "Nature Walks",
     experience2Text:
       "The woods in front of the house invite you to wander among centuries‑old trees. At dawn, as the mist dances over the Tâmega, discover secret trails and moments of pure contemplation.",
     experience2Quote: "Where time is measured in breaths",
-    experience3Type: "Amarante's Heritage",
+    experience3Type: "Amarante - Heritage with History",
     experience3Title: "Cultural Experiences",
     experience3Text:
       "Follow in the footsteps of Amadeu de Souza‑Cardoso, Teixeira de Pascoaes, and Agustina Bessa‑Luís. Guided visits that reveal the artistic and literary soul of this land, where every street is a verse.",
@@ -537,13 +537,13 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
       "Dîners intimes aux chandelles où chaque plat raconte une histoire. Des ingrédients locaux transformés en souvenirs à savourer lentement.",
     experience1Quote: "La table, une scène de rencontres",
 
-    experience2Type: "Entre les Bois et la Rivière",
+    experience2Type: "Entre les Serras et la Rivière",
     experience2Title: "Promenades dans la Nature",
     experience2Text:
       "Les bois face à la maison invitent à flâner parmi des arbres séculaires. À l’aube, lorsque la brume danse sur le Tâmega, découvrez des sentiers secrets et des instants de pure contemplation.",
     experience2Quote: "Là où le temps se mesure en souffles",
 
-    experience3Type: "Patrimoine d’Amarante",
+    experience3Type: "Amarante - Patrimoine avec Histoire",
     experience3Title: "Expériences Culturelles",
     experience3Text:
       "Suivez les traces d’Amadeo de Souza-Cardoso, Teixeira de Pascoaes et Agustina Bessa-Luís. Des visites guidées qui révèlent l’âme artistique et littéraire de cette terre où chaque rue est un vers.",
@@ -803,13 +803,13 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
       "Cenas íntimas a la luz de las velas donde cada plato cuenta una historia. Ingredientes locales transformados en recuerdos para saborear lentamente.",
     experience1Quote: "La mesa, un escenario de encuentros",
 
-    experience2Type: "Entre el Bosque y el Río",
+    experience2Type: "Entre las Montañas y el Río",
     experience2Title: "Paseos en la Naturaleza",
     experience2Text:
       "El bosque frente a la casa invita a caminar entre árboles centenarios. Al amanecer, cuando la niebla danza sobre el Tâmega, descubre senderos secretos y momentos de pura contemplación.",
     experience2Quote: "Donde el tiempo se mide en suspiros",
 
-    experience3Type: "Patrimonio de Amarante",
+    experience3Type: "Amarante - Patrimonio con Historia",
     experience3Title: "Experiencias Culturales",
     experience3Text:
       "Sigue los pasos de Amadeo de Souza-Cardoso, Teixeira de Pascoaes y Agustina Bessa-Luís. Visitas guiadas que revelan el alma artística y literaria de esta tierra, donde cada calle es un verso.",

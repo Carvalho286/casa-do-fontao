@@ -487,3 +487,80 @@ if (activeOption) {
   activeOption.classList.add("active");
   currentLangSpan.textContent = savedLang.toUpperCase();
 }
+
+// === EXPERIENCE CAROUSELS ===
+function initExperienceCarousels() {
+  const carousels = document.querySelectorAll('.experiencia-carousel');
+  
+  carousels.forEach((carousel) => {
+    const images = carousel.querySelectorAll('.carousel-image');
+    const prevBtn = carousel.querySelector('.carousel-arrow.prev');
+    const nextBtn = carousel.querySelector('.carousel-arrow.next');
+    let currentIndex = 0;
+    let autoRotateInterval;
+
+    // Function to show specific image
+    function showImage(index) {
+      images.forEach((img) => img.classList.remove('active'));
+      images[index].classList.add('active');
+      currentIndex = index;
+    }
+
+    // Function to go to next image
+    function nextImage() {
+      const nextIndex = (currentIndex + 1) % images.length;
+      showImage(nextIndex);
+    }
+
+    // Function to go to previous image
+    function prevImage() {
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(prevIndex);
+    }
+
+    // Start auto-rotation
+    function startAutoRotate() {
+      autoRotateInterval = setInterval(nextImage, 5000); // 5 seconds
+    }
+
+    // Stop auto-rotation
+    function stopAutoRotate() {
+      clearInterval(autoRotateInterval);
+    }
+
+    // Restart auto-rotation after manual navigation
+    function restartAutoRotate() {
+      stopAutoRotate();
+      startAutoRotate();
+    }
+
+    // Event listeners for arrows
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevImage();
+        restartAutoRotate();
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextImage();
+        restartAutoRotate();
+      });
+    }
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoRotate);
+    carousel.addEventListener('mouseleave', startAutoRotate);
+
+    // Start auto-rotation on page load
+    startAutoRotate();
+  });
+}
+
+// Initialize carousels when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initExperienceCarousels);
+} else {
+  initExperienceCarousels();
+}
