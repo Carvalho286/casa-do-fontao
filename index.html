@@ -21,14 +21,39 @@
     <header class="topbar">
       <div class="container nav">
         <div class="logo" data-i18n="logo">Casa do Fontão</div>
-        <nav>
-          <a href="#essencia" data-i18n="home">A casa</a>
+        
+        <!-- Hamburger Button (mobile only) -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <nav id="main-nav">
+          <a href="#essencia" data-i18n="home">A Casa</a>
           <a href="#experiencias" data-i18n="experiences">Experiências</a>
           <a href="#quartos" data-i18n="rooms">Quartos</a>
           <a href="#eventos" data-i18n="events">Eventos</a>
           <!-- <a href="#historia" data-i18n="history">História</a> -->
           <a href="contactos.html" data-i18n="contact">Contactos</a>
+          
+          <!-- Mobile Language Switcher -->
+          <div class="mobile-nav-footer">
+            <div class="mobile-lang-switch">
+              <span class="mobile-lang-label" data-i18n="language">Idioma:</span>
+              <div class="mobile-lang-options">
+                <button class="mobile-lang-btn active" data-lang="pt">PT</button>
+                <button class="mobile-lang-btn" data-lang="en">EN</button>
+                <button class="mobile-lang-btn" data-lang="fr">FR</button>
+                <button class="mobile-lang-btn" data-lang="es">ES</button>
+              </div>
+            </div>
+          </div>
         </nav>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+        
         <div class="right-actions">
           <a
             href="https://booking.roomraccoon.pt/casadofontao/pt"

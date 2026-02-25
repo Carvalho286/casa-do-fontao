@@ -1,6 +1,7 @@
 const translations = {
   pt: {
-    home: "A casa",
+    language: "Idioma",
+    home: "A Casa",
     events: "Eventos",
     gallery: "Galeria",
     essence: "Essência",
@@ -250,7 +251,8 @@ const translations = {
       'Website desenvolvido por <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   en: {
-    home: "The house",
+    language: "Language",
+    home: "The House",
     events: "Events",
     gallery: "Gallery",
     essence: "Essence",
@@ -498,7 +500,8 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
       'Website developed by <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   fr: {
-    home: "La maison",
+    language: "Langue",
+    home: "La Maison",
     events: "Événements",
     gallery: "Galerie",
     essence: "Essence",
@@ -763,7 +766,8 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
       'Site développé par <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a>',
   },
   es: {
-    home: "La casa",
+    language: "Idioma",
+    home: "La Casa",
     events: "Eventos",
     gallery: "Galería",
     essence: "Esencia",
@@ -1064,6 +1068,22 @@ function applyTranslations(lang) {
 
   document.documentElement.lang = lang;
   localStorage.setItem("casa-lang", lang);
+
+  // Update language display in dropdown
+  const currentLangDisplay = document.getElementById("current-lang");
+  if (currentLangDisplay) {
+    currentLangDisplay.textContent = lang.toUpperCase();
+  }
+
+  // Update active state in desktop dropdown
+  document.querySelectorAll(".lang-option").forEach((opt) => {
+    opt.classList.toggle("active", opt.getAttribute("data-lang") === lang);
+  });
+
+  // Update active state in mobile menu
+  document.querySelectorAll(".mobile-lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+  });
 
   // Dispara evento global para atualizar quartos
   const event = new CustomEvent("langChanged", { detail: { lang } });

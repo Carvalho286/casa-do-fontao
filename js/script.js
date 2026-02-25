@@ -1,3 +1,71 @@
+// === MOBILE MENU TOGGLE ===
+const hamburger = document.getElementById('hamburger');
+const mainNav = document.getElementById('main-nav');
+const mobileOverlay = document.getElementById('mobile-menu-overlay');
+
+function toggleMobileMenu() {
+  hamburger.classList.toggle('active');
+  mainNav.classList.toggle('active');
+  mobileOverlay.classList.toggle('active');
+  document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+}
+
+function closeMobileMenu() {
+  hamburger.classList.remove('active');
+  mainNav.classList.remove('active');
+  mobileOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Toggle menu on hamburger click
+if (hamburger) {
+  hamburger.addEventListener('click', toggleMobileMenu);
+}
+
+// Close menu when overlay is clicked
+if (mobileOverlay) {
+  mobileOverlay.addEventListener('click', closeMobileMenu);
+}
+
+// Close menu when a nav link is clicked
+if (mainNav) {
+  const navLinks = mainNav.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+}
+
+// Close menu on window resize if opened
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900 && mainNav.classList.contains('active')) {
+    closeMobileMenu();
+  }
+});
+
+// === MOBILE LANGUAGE SWITCHER ===
+const mobileLangButtons = document.querySelectorAll('.mobile-lang-btn');
+
+mobileLangButtons.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const selectedLang = this.getAttribute('data-lang');
+    
+    // Update mobile button states
+    mobileLangButtons.forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    
+    // Sync with main language switcher
+    const langOptions = document.querySelectorAll('.lang-option');
+    langOptions.forEach(option => {
+      if (option.getAttribute('data-lang') === selectedLang) {
+        option.click();
+      }
+    });
+    
+    // Close mobile menu after language selection
+    // closeMobileMenu();
+  });
+});
+
 // scroll suave (só para âncoras internas)
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
