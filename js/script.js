@@ -532,6 +532,8 @@ function initExperienceCarousels() {
     const nextBtn = carousel.querySelector('.carousel-arrow.next');
     let currentIndex = 0;
     let autoRotateInterval;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     // Function to show specific image
     function showImage(index) {
@@ -568,6 +570,21 @@ function initExperienceCarousels() {
       startAutoRotate();
     }
 
+    // Handle swipe gestures
+    function handleSwipe() {
+      const swipeThreshold = 50; // minimum distance for swipe
+      if (touchEndX < touchStartX - swipeThreshold) {
+        // Swipe left - next image
+        nextImage();
+        restartAutoRotate();
+      }
+      if (touchEndX > touchStartX + swipeThreshold) {
+        // Swipe right - previous image
+        prevImage();
+        restartAutoRotate();
+      }
+    }
+
     // Event listeners for arrows
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
@@ -583,7 +600,18 @@ function initExperienceCarousels() {
       });
     }
 
-    // Pause on hover
+    // Touch events for mobile swipe
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAutoRotate();
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    // Pause on hover (desktop only)
     carousel.addEventListener('mouseenter', stopAutoRotate);
     carousel.addEventListener('mouseleave', startAutoRotate);
 

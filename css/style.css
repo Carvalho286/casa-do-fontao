@@ -939,13 +939,26 @@ nav a {
     text-align: center;
   }
 
+  .experiencia-media {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .experiencia-carousel {
+    width: 100%;
+  }
+
+  .carousel-images {
+    width: 100%;
+  }
+
   .experiencia-content {
     margin-top: 1.5rem;
   }
 
   .carousel-arrow {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
   }
 
   .carousel-arrow.prev {
@@ -957,8 +970,8 @@ nav a {
   }
 
   .carousel-arrow svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -1391,6 +1404,8 @@ nav a {
   .essencia-gallery { grid-template-columns: 1fr 1fr; }
 
   .experiencia-item, .experiencia-item.reverse { flex-direction: column; text-align: center; }
+  .experiencia-media { width: 100%; }
+  .experiencia-carousel { width: 100%; }
   .experiencia-content { margin-top: 1rem; }
 
   .quartos-grid { grid-template-columns: 1fr; gap: 1.6rem; }
@@ -1424,6 +1439,30 @@ nav a {
 
   .evento-card { grid-template-columns: 40px 1fr; }
   .evento-extra { margin-top: .6rem; grid-column: 1 / -1; }
+
+  /* Carousel adjustments for small phones */
+  .carousel-arrow {
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .carousel-arrow.prev {
+    left: 8px;
+  }
+
+  .carousel-arrow.next {
+    right: 8px;
+  }
+
+  .experiencia-media {
+    width: 100%;
+  }
+
+  .experiencia-carousel {
+    width: 100%;
+    touch-action: pan-y pinch-zoom;
+  }
 }
 
 /* --- Forçar .quarto-meta ao fundo apenas na grelha principal --- */
