@@ -1,3 +1,70 @@
+console.log("Script.js loaded");
+
+// === DROPDOWN DE IDIOMA (INITIALIZE FIRST) ===
+function initLanguageSwitcher() {
+  const langSwitch = document.querySelector(".lang-switch");
+  const langCurrent = document.getElementById("lang-current");
+  const currentLangSpan = document.getElementById("current-lang");
+  const langDropdown = document.getElementById("lang-dropdown");
+  const langOptions = document.querySelectorAll(".lang-option");
+
+  console.log("Language switcher init:", { langSwitch, langCurrent, langOptions: langOptions.length });
+
+  // Abre/fecha dropdown
+  if (langCurrent && langSwitch) {
+    langCurrent.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      console.log("Language button clicked, toggling open class");
+      langSwitch.classList.toggle("open");
+      console.log("Lang switch has open class:", langSwitch.classList.contains("open"));
+    });
+  }
+
+  // Fecha dropdown ao clicar fora
+  if (langSwitch) {
+    document.addEventListener("click", (e) => {
+      if (!langSwitch.contains(e.target)) {
+        langSwitch.classList.remove("open");
+      }
+    });
+  }
+
+  // Atualiza idioma ao selecionar opção
+  langOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      const selectedLang = option.getAttribute("data-lang").toUpperCase();
+      if (currentLangSpan) {
+        currentLangSpan.textContent = selectedLang;
+      }
+      langSwitch.classList.remove("open");
+
+      // Marca opção ativa
+      langOptions.forEach((opt) => opt.classList.remove("active"));
+      option.classList.add("active");
+    });
+  });
+
+  // Define idioma inicial como ativo
+  const savedLang = (localStorage.getItem("casa-lang") || "pt").toLowerCase();
+  const activeOption = document.querySelector(
+    `.lang-option[data-lang="${savedLang}"]`
+  );
+  if (activeOption) {
+    activeOption.classList.add("active");
+    if (currentLangSpan) {
+      currentLangSpan.textContent = savedLang.toUpperCase();
+    }
+  }
+}
+
+// Initialize language switcher immediately
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+} else {
+  initLanguageSwitcher();
+}
+
 // === MOBILE MENU TOGGLE ===
 const hamburger = document.getElementById('hamburger');
 const mainNav = document.getElementById('main-nav');
@@ -266,6 +333,8 @@ const quartosData = {
 const grid = document.getElementById("quartos-grid");
 
 function renderQuartosI18n() {
+  if (!grid) return; // Exit if grid doesn't exist on this page
+  
   const lang = localStorage.getItem("casa-lang") || "pt";
   const langData = translations[lang]?.quartos || {};
 
@@ -300,7 +369,10 @@ function renderQuartosI18n() {
   attachModalI18n();
 }
 
-renderQuartosI18n();
+// Only render rooms if we're on a page with the grid
+if (grid) {
+  renderQuartosI18n();
+}
 
 // === ELEMENTOS DO MODAL ===
 const modal = document.getElementById("quarto-modal");
@@ -411,15 +483,20 @@ function attachModalI18n() {
 }
 
 // === FECHAR MODAL ===
-closeModal.addEventListener("click", () => {
-  modal.classList.add("hidden");
-  document.body.style.overflow = "auto";
-});
+if (closeModal && modal) {
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  });
+}
 
-document.querySelector(".quarto-overlay").addEventListener("click", () => {
-  modal.classList.add("hidden");
-  document.body.style.overflow = "auto";
-});
+const quartoOverlay = document.querySelector(".quarto-overlay");
+if (quartoOverlay && modal) {
+  quartoOverlay.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  });
+}
 
 // Adiciona classe 'portrait' a imagens verticais na galeria
 document.querySelectorAll(".quarto-gallery img").forEach((img) => {
@@ -432,61 +509,18 @@ document.querySelectorAll(".quarto-gallery img").forEach((img) => {
 
 // efeito de scroll para mudar a cor da topbar
 const topbar = document.querySelector(".topbar");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    topbar.classList.add("scrolled");
-  } else {
-    topbar.classList.remove("scrolled");
-  }
-});
+if (topbar) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      topbar.classList.add("scrolled");
+    } else {
+      topbar.classList.remove("scrolled");
+    }
+  });
+}
 
 // === REGERAR QUARTOS QUANDO O IDIOMA MUDA ===
 document.addEventListener("langChanged", renderQuartosI18n);
-
-// === DROPDOWN DE IDIOMA ===
-const langSwitch = document.querySelector(".lang-switch");
-const langCurrent = document.getElementById("lang-current");
-const currentLangSpan = document.getElementById("current-lang");
-const langDropdown = document.getElementById("lang-dropdown");
-const langOptions = document.querySelectorAll(".lang-option");
-
-// Abre/fecha dropdown
-if (langCurrent) {
-  langCurrent.addEventListener("click", (e) => {
-    e.stopPropagation();
-    langSwitch.classList.toggle("open");
-  });
-}
-
-// Fecha dropdown ao clicar fora
-document.addEventListener("click", (e) => {
-  if (!langSwitch.contains(e.target)) {
-    langSwitch.classList.remove("open");
-  }
-});
-
-// Atualiza idioma ao selecionar opção
-langOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    const selectedLang = option.getAttribute("data-lang").toUpperCase();
-    currentLangSpan.textContent = selectedLang;
-    langSwitch.classList.remove("open");
-
-    // Marca opção ativa
-    langOptions.forEach((opt) => opt.classList.remove("active"));
-    option.classList.add("active");
-  });
-});
-
-// Define idioma inicial como ativo
-const savedLang = (localStorage.getItem("casa-lang") || "pt").toLowerCase();
-const activeOption = document.querySelector(
-  `.lang-option[data-lang="${savedLang}"]`
-);
-if (activeOption) {
-  activeOption.classList.add("active");
-  currentLangSpan.textContent = savedLang.toUpperCase();
-}
 
 // === EXPERIENCE CAROUSELS ===
 function initExperienceCarousels() {
