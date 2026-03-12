@@ -281,7 +281,7 @@ const quartosData = {
     `,
     quote: "Tradição e conforto em perfeita harmonia.",
     image: "media/rooms/quarto5.jpg",
-    gallery: ["media/rooms/quarto5b.jpg", "media/rooms/quarto5c.jpg"],
+    gallery: ["media/rooms/quarto5a.jpg", "media/rooms/quarto5c.jpg", "media/rooms/quarto5b.jpg"],
     capacidade: "2 pessoas",
     cama: "Cama Queen Size",
     area: "30 m²",

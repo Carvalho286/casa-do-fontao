@@ -17,9 +17,9 @@ const translations = {
     discoverHouse: 'Descobrir a casa',
     essenceTitle: 'A essência da Casa do Fontão',
     essenceText1:
-      'A Casa do Fontão é uma Casa Histórica com arquitetura do século XVIII — uma casa de charme, onde o tempo parece abrandar.',
+      'A Casa do Fontão é uma casa de charme, onde o tempo parece abrandar.',
     essenceText2:
-      'Cada detalhe — dos móveis antigos, soalhos, objetos decorativos e antiguidades inigualáveis, aos tecidos de qualidade excelente, ao conforto da cama — foi pensado para oferecer uma experiência sensorial e emocional, onde a história encontra o conforto contemporâneo.',
+      'Um verdadeiro refúgio de serenidade e elegância onde cada detalhe é pensado para oferecer uma experiência sensorial e emocional única. Aqui, a história encontra o conforto contemporâneo.',
     essenceQuote:
       '"Um refúgio onde o passado sussurra histórias e o presente convida ao descanso."',
     essenceIcon1: 'Um lar com alma antiga e detalhes que contam histórias.',
@@ -30,22 +30,22 @@ const translations = {
     experience1Type: 'Sabores com Alma',
     experience1Title: 'Experiências Gastronómicas',
     experience1Text:
-      'Jantares intimistas à luz de velas, onde cada prato conta uma história. Ingredientes locais transformados em memórias que se saboreiam lentamente.',
+      'Desde brunch a um jantar intimista ou a um jantar corporativo, aqui encontra a calma e o requinte necessários para saborear e desfrutar de experiências gastronómicas especiais. Peça a sua proposta e faça da nossa mesa o seu palco de encontros.',
     experience1Quote: 'A mesa como palco de encontros',
     experience2Type: 'Entre as Serras e o Rio',
     experience2Title: 'Passeios na Natureza',
     experience2Text:
-      'O bosque em frente à casa convida-o a perder-se entre árvores centenárias. Ao amanhecer, quando a névoa dança sobre o Tâmega, descubra trilhos secretos e momentos de contemplação pura.',
+      'Amarante convida-o a perder-se na diversidade da sua natureza. Com a Serra do Marão no horizonte, as brumas, o Rio Tâmega e os Trilhos (Azenhas, Castanheiros e da Nossa Sra. do Vau), o tempo abranda e inspira por quem aqui passa.',
     experience2Quote: 'Onde o tempo se mede em respirações',
     experience3Type: 'Amarante - Património com História',
-    experience3Title: 'Experiências Culturais',
+    experience3Title: 'Natureza Criativa',
     experience3Text:
-      'Percorra as pegadas de Amadeu de Souza-Cardoso, Teixeira de Pascoaes e Agustina Bessa-Luís. Visitas guiadas que revelam a alma artística e literária desta terra, onde cada rua é um verso.',
+      'Berço de artistas como Amadeo de Souza-Cardoso, Agustina Bessa-Luís e Teixeira de Pascoes, Amarante oferece um roteiro especial, onde a história e a arte se unem e dão vida e autenticidade à sua visita.',
     experience3Quote: 'Nas palavras dos que aqui sonharam',
     experience4Type: 'Néctares do Douro',
     experience4Title: 'Degustação de Vinhos',
     experience4Text:
-      'Uma viagem sensorial pelos vinhos da região, harmonizados com queijos e enchidos artesanais. Cada copo é uma celebração da tradição vinícola portuguesa, entre histórias e brindess ao pôr do sol.',
+      'Prove os vinhos do Douro Verde, harmonizados com sabores locais e inconfundíveis. Conheça a história e a magia de umas das 14 regiões vínicas de Portugal, onde nasceu uma categoria de vinho inconfundível em todo o mundo.',
     experience4Quote: 'O sabor da terra em cada gole',
     contactsLocation: 'Localização',
     contactsPhone: 'Telefone',
@@ -395,9 +395,9 @@ const translations = {
     discoverHouse: 'Discover the house',
     essenceTitle: 'The essence of Casa do Fontão',
     essenceText1:
-      'Casa do Fontão is a historic house with 18th-century architecture — a charming home where time seems to slow down.',
+      'Casa do Fontão is a charming house where time seems to slow down.',
     essenceText2:
-      'Every detail — from the antique furniture, floors, decorative objects and unparalleled antiques, to the high-quality fabrics and the comfort of the bed — has been designed to offer a sensory and emotional experience, where history meets contemporary comfort.',
+      'A true haven of serenity and elegance where every detail is carefully considered to offer a unique sensory and emotional experience. Here, history meets contemporary comfort.',
     essenceQuote:
       '"A refuge where the past whispers stories and the present invites you to rest."',
     essenceIcon1: 'A home with an old soul and details that tell stories.',
@@ -408,22 +408,22 @@ const translations = {
     experience1Type: 'Flavors with Soul',
     experience1Title: 'Culinary Experiences',
     experience1Text:
-      'Intimate candlelit dinners where every dish tells a story. Local ingredients transformed into memories to be savored slowly.',
+      'From brunch to an intimate dinner or a corporate dinner, here you will find the calm and refinement needed to savor and enjoy special gastronomic experiences. Request your proposal and make our table your setting for encounters.',
     experience1Quote: 'The table, a stage for encounters',
     experience2Type: 'Between the Mountains and the River',
     experience2Title: 'Nature Walks',
     experience2Text:
-      'The woods in front of the house invite you to wander among centuries‑old trees. At dawn, as the mist dances over the Tâmega, discover secret trails and moments of pure contemplation.',
+      'Amarante invites you to lose yourself in the diversity of its nature. With the Serra do Marão mountain range on the horizon, the mists, the Tâmega River and the trails (Azenhas, Castanheiros and Nossa Senhora do Vau), time slows down and inspires those who pass through here.',
     experience2Quote: 'Where time is measured in breaths',
     experience3Type: 'Amarante - Heritage with History',
-    experience3Title: 'Cultural Experiences',
+    experience3Title: 'Creative Nature',
     experience3Text:
-      'Follow in the footsteps of Amadeu de Souza‑Cardoso, Teixeira de Pascoaes, and Agustina Bessa‑Luís. Guided visits that reveal the artistic and literary soul of this land, where every street is a verse.',
+      'Birthplace of artists such as Amadeo de Souza-Cardoso, Agustina Bessa-Luís and Teixeira de Pascoes, Amarante offers a special itinerary where history and art come together, giving life and authenticity to your visit.',
     experience3Quote: 'In the words of those who dreamed here',
     experience4Type: 'Douro Nectars',
     experience4Title: 'Wine Tasting',
     experience4Text:
-      'A sensory journey through the region’s wines, paired with artisanal cheeses and cured meats. Each glass is a celebration of Portuguese winemaking tradition, with stories and toasts at sunset.',
+      'Sample the wines of Douro Verde, paired with local and unmistakable flavors. Discover the history and magic of one of Portugal’s 14 wine regions, where a unique wine category was born, recognized worldwide.',
     experience4Quote: 'The taste of the land in every sip',
     contactsLocation: 'Location',
     contactsPhone: 'Phone',
@@ -772,9 +772,9 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
 
     essenceTitle: 'L’essence de la Casa do Fontão',
     essenceText1:
-      'La Casa do Fontão est une demeure historique à l’architecture du XVIIIᵉ siècle — un lieu plein de charme où le temps semble ralentir.',
+      'La Casa do Fontão est une maison charmante où le temps semble s’écouler plus lentement.',
     essenceText2:
-      'Chaque détail — du mobilier ancien, des sols, des objets décoratifs et antiquités incomparables, aux tissus de haute qualité et au confort du lit — a été pensé pour offrir une expérience sensorielle et émotionnelle où l’histoire rencontre le confort contemporain.',
+      'Un véritable havre de sérénité et d’élégance où chaque détail est soigneusement pensé pour offrir une expérience sensorielle et émotionnelle unique. Ici, l’histoire rencontre le confort contemporain.',
     essenceQuote:
       '« Un refuge où le passé murmure des histoires et où le présent invite au repos. »',
     essenceIcon1:
@@ -788,25 +788,25 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     experience1Type: 'Saveurs avec Âme',
     experience1Title: 'Expériences Culinaires',
     experience1Text:
-      'Dîners intimes aux chandelles où chaque plat raconte une histoire. Des ingrédients locaux transformés en souvenirs à savourer lentement.',
+      'Du brunch au dîner intime ou professionnel, vous trouverez ici la tranquillité et le raffinement nécessaires pour savourer des expériences gastronomiques exceptionnelles. Demandez un devis et réservez votre table pour vos réceptions.',
     experience1Quote: 'La table, une scène de rencontres',
 
     experience2Type: 'Entre les Serras et la Rivière',
     experience2Title: 'Promenades dans la Nature',
     experience2Text:
-      'Les bois face à la maison invitent à flâner parmi des arbres séculaires. À l’aube, lorsque la brume danse sur le Tâmega, découvrez des sentiers secrets et des instants de pure contemplation.',
+      'Amarante vous invite à vous perdre dans la diversité de sa nature. Avec la Serra do Marão à l’horizon, les brumes, le fleuve Tâmega et les sentiers (Azenhas, Castanheiros et Nossa Senhora do Vau), le temps semble suspendu et inspirer ceux qui y passent.',
     experience2Quote: 'Là où le temps se mesure en souffles',
 
     experience3Type: 'Amarante - Patrimoine avec Histoire',
-    experience3Title: 'Expériences Culturelles',
+    experience3Title: 'Nature Créative',
     experience3Text:
-      'Suivez les traces d’Amadeo de Souza-Cardoso, Teixeira de Pascoaes et Agustina Bessa-Luís. Des visites guidées qui révèlent l’âme artistique et littéraire de cette terre où chaque rue est un vers.',
+      'Berceau d’artistes tels qu’Amadeo de Souza-Cardoso, Agustina Bessa-Luís et Teixeira de Pascoes, Amarante propose un itinéraire unique où histoire et art se conjuguent, donnant vie et authenticité à votre visite.',
     experience3Quote: 'Dans les mots de ceux qui ont rêvé ici',
 
     experience4Type: 'Nectars du Douro',
     experience4Title: 'Dégustation de Vins',
     experience4Text:
-      'Un voyage sensoriel à travers les vins de la région, accompagnés de fromages artisanaux et de charcuteries. Chaque verre est une célébration de la tradition vinicole portugaise, entre histoires et toasts au coucher du soleil.',
+      'Dégustez les vins du Douro Verde, accompagnés de saveurs locales et incomparables. Découvrez l’histoire et la magie de l’une des 14 régions viticoles du Portugal, berceau d’une catégorie de vins unique, reconnue dans le monde entier.',
     experience4Quote: 'Le goût de la terre à chaque gorgée',
 
     contactsLocation: 'Localisation',
@@ -1166,9 +1166,9 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
 
     essenceTitle: 'La esencia de Casa do Fontão',
     essenceText1:
-      'Casa do Fontão es una casa histórica con arquitectura del siglo XVIII — un hogar lleno de encanto donde el tiempo parece ralentizarse.',
+      'Casa do Fontão es una casa encantadora donde el tiempo parece ralentizarse.',
     essenceText2:
-      'Cada detalle — desde los muebles antiguos, los suelos, los objetos decorativos y las piezas únicas, hasta los tejidos de alta calidad y el confort de la cama — ha sido pensado para ofrecer una experiencia sensorial y emocional donde la historia se encuentra con el confort contemporáneo.',
+      'Un verdadero remanso de serenidad y elegancia donde cada detalle se cuida con esmero para ofrecer una experiencia sensorial y emocional única. Aquí, la historia se fusiona con la comodidad contemporánea.',
     essenceQuote:
       '“Un refugio donde el pasado susurra historias y el presente invita al descanso.”',
     essenceIcon1: 'Un hogar con alma antigua y detalles que cuentan historias.',
@@ -1181,25 +1181,25 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     experience1Type: 'Sabores con Alma',
     experience1Title: 'Experiencias Culinarias',
     experience1Text:
-      'Cenas íntimas a la luz de las velas donde cada plato cuenta una historia. Ingredientes locales transformados en recuerdos para saborear lentamente.',
+      'Desde un brunch hasta una cena íntima o de empresa, aquí encontrará la tranquilidad y el refinamiento necesarios para disfrutar de experiencias gastronómicas especiales. Solicite su propuesta y haga de nuestra mesa el escenario perfecto para sus reuniones.',
     experience1Quote: 'La mesa, un escenario de encuentros',
 
     experience2Type: 'Entre las Montañas y el Río',
     experience2Title: 'Paseos en la Naturaleza',
     experience2Text:
-      'El bosque frente a la casa invita a caminar entre árboles centenarios. Al amanecer, cuando la niebla danza sobre el Tâmega, descubre senderos secretos y momentos de pura contemplación.',
+      'Amarante te invita a perderte en la diversidad de su naturaleza. Con la Serra do Marão en el horizonte, las brumas, el río Támega y los senderos (Azenhas, Castanheiros y Nossa Senhora do Vau), el tiempo se detiene e inspira a quienes pasan por aquí.',
     experience2Quote: 'Donde el tiempo se mide en suspiros',
 
     experience3Type: 'Amarante - Patrimonio con Historia',
-    experience3Title: 'Experiencias Culturales',
+    experience3Title: 'Naturaleza Creativa',
     experience3Text:
-      'Sigue los pasos de Amadeo de Souza-Cardoso, Teixeira de Pascoaes y Agustina Bessa-Luís. Visitas guiadas que revelan el alma artística y literaria de esta tierra, donde cada calle es un verso.',
+      'Cuna de artistas como Amadeo de Souza-Cardoso, Agustina Bessa-Luís y Teixeira de Pascoes, Amarante ofrece un itinerario especial donde la historia y el arte se unen, dando vida y autenticidad a su visita.',
     experience3Quote: 'En las palabras de quienes soñaron aquí',
 
     experience4Type: 'Néctares del Duero',
     experience4Title: 'Catas de Vino',
     experience4Text:
-      'Un viaje sensorial a través de los vinos de la región, acompañados de quesos artesanales y embutidos. Cada copa es una celebración de la tradición vinícola portuguesa, llena de historias y brindis al atardecer.',
+      'Pruebe los vinos del Duero Verde, maridados con sabores locales e inconfundibles. Descubra la historia y la magia de una de las 14 regiones vinícolas de Portugal, donde nació una categoría de vino única, reconocida mundialmente.',
     experience4Quote: 'El sabor de la tierra en cada sorbo',
 
     contactsLocation: 'Ubicación',
