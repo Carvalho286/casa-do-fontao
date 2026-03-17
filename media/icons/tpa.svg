@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 48">
+  <rect width="80" height="48" rx="8" fill="white"/>
+  <!-- POS Terminal body -->
+  <rect x="28" y="5" width="24" height="38" rx="4" fill="none" stroke="#C7A045" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="31" y="8" width="18" height="12" rx="2" fill="#C7A045" opacity="0.85"/>
+  <!-- Keypad dots row 1 -->
+  <circle cx="34" cy="26" r="1.5" fill="#C7A045"/>
+  <circle cx="40" cy="26" r="1.5" fill="#C7A045"/>
+  <circle cx="46" cy="26" r="1.5" fill="#C7A045"/>
+  <!-- Row 2 -->
+  <circle cx="34" cy="32" r="1.5" fill="#C7A045"/>
+  <circle cx="40" cy="32" r="1.5" fill="#C7A045"/>
+  <circle cx="46" cy="32" r="1.5" fill="#C7A045"/>
+  <!-- Row 3 -->
+  <circle cx="34" cy="38" r="1.5" fill="#C7A045"/>
+  <circle cx="40" cy="38" r="1.5" fill="#C7A045"/>
+  <circle cx="46" cy="38" r="1.5" fill="#C7A045"/>
+  <!-- Card slot side -->
+  <rect x="24" y="22" width="4" height="2" rx="1" fill="#C7A045" opacity="0.6"/>
+</svg>

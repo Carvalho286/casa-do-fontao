@@ -254,8 +254,70 @@ const translations = {
     footerLegal: 'Informação Legal',
     footerLegalTerms: 'Termos e Condições',
     footerLegalPrivacy: 'Política de Privacidade',
+    footerLegalPayments: 'Pagamentos',
     footerLegalDisputes: 'Resolução de Litígios',
     privacyPolicyLink: 'Política de Privacidade',
+
+    // Pagamentos, Cancelamentos e Reembolsos
+    paymentsTitle: 'Pagamentos, Cancelamentos e Reembolsos',
+    paymentsSubtitle:
+      'Informação sobre métodos de pagamento, confirmação de reservas, cancelamentos e reembolsos',
+    paymentsMethodsTitle: '1. Métodos de Pagamento',
+    paymentsMethods1:
+      'A Casa do Fontão disponibiliza os métodos de pagamento indicados durante o processo de reserva.',
+    paymentsAvailableTitle: 'Métodos atualmente disponíveis',
+    paymentsMethodMbway: 'MB Way',
+    paymentsMethodMultibanco: 'Referência Multibanco',
+    paymentsMethodCard: 'Cartões de Crédito/Débito',
+    paymentsMethodGooglePay: 'Google Pay',
+    paymentsMethodApplePay: 'Apple Pay',
+    paymentsMethodPix: 'PIX (Brasil)',
+    paymentsMethodTpa: 'TPAs (Pagamentos Presenciais)',
+    paymentsMethods2:
+      'Os métodos efetivamente disponíveis ao cliente serão sempre apresentados antes da conclusão da reserva.',
+    paymentsBookingTitle: '2. Confirmação da Reserva',
+    paymentsBooking1:
+      'A reserva considera-se submetida após o preenchimento dos dados solicitados e será confirmada nos termos indicados no processo de reserva.',
+    paymentsBooking2:
+      'Sempre que aplicável, a confirmação definitiva da reserva fica dependente da boa cobrança do pagamento.',
+    paymentsBooking3:
+      'O cliente receberá confirmação da reserva por contacto direto e/ou através da plataforma de reserva utilizada.',
+    paymentsServiceTitle: '3. Prestação do Serviço',
+    paymentsService1:
+      'O serviço de alojamento será prestado na data ou período selecionado pelo cliente no momento da reserva.',
+    paymentsService2:
+      'Em caso de indisponibilidade excecional após a reserva, o cliente será informado com a maior brevidade possível e serão apresentadas as soluções adequadas, incluindo, quando aplicável, o respetivo reembolso.',
+    paymentsCancellationTitle: '4. Cancelamentos',
+    paymentsCancellation1:
+      'O cliente poderá solicitar o cancelamento da reserva, devendo para esse efeito contactar a Casa do Fontão através dos meios disponibilizados no website ou utilizar a plataforma onde efetuou a reserva, quando aplicável.',
+    paymentsCancellation2:
+      'As condições concretas de cancelamento podem variar consoante a tarifa, campanha, época do ano ou condições específicas apresentadas no momento da reserva.',
+    paymentsCancellationNoteTitle: 'Nota importante',
+    paymentsCancellationNote1:
+      'Nos termos legais aplicáveis, o direito de livre resolução de 14 dias pode não ser aplicável a serviços de alojamento quando o contrato preveja uma data ou período de execução específicos.',
+    paymentsRefundTitle: '5. Reembolsos',
+    paymentsRefund1:
+      'Quando exista lugar a reembolso, o mesmo será efetuado, sempre que possível, pelo mesmo método de pagamento utilizado na transação inicial.',
+    paymentsRefund2:
+      'O reembolso será processado no prazo máximo legalmente aplicável, salvo situações excecionais devidamente fundamentadas.',
+    paymentsRefund3:
+      'Caso o cliente solicite um método de reembolso diferente, eventuais custos adicionais associados poderão não ser suportados pela Casa do Fontão.',
+    paymentsPricesTitle: '6. Preços e Taxas',
+    paymentsPrices1:
+      'Os preços apresentados no processo de reserva correspondem ao valor total do alojamento selecionado, incluindo os impostos e taxas aplicáveis, salvo indicação em contrário.',
+    paymentsPrices2:
+      'Antes da conclusão da reserva, o cliente terá acesso ao valor total a pagar, bem como a qualquer informação relevante sobre custos adicionais que sejam aplicáveis.',
+    paymentsInvoiceTitle: '7. Faturação',
+    paymentsInvoice1:
+      'Após o pagamento, poderá ser emitido o respetivo documento de faturação, nos termos legalmente aplicáveis.',
+    paymentsInvoice2:
+      'Caso pretenda fatura com número de contribuinte, o cliente deverá solicitar essa emissão no momento da reserva ou logo após o pagamento, sempre que possível.',
+    paymentsContactTitle: '8. Contacto para Questões de Pagamento',
+    paymentsContact1:
+      'Para qualquer dúvida relacionada com pagamentos, cancelamentos ou reembolsos, o cliente poderá contactar diretamente a Casa do Fontão:',
+    paymentsContact2:
+      '<strong>Email:</strong> geral.casadofontao@gmail.com<br /><strong>Telefone:</strong> +351 926 448 247<br /><strong>Morada:</strong> R. Fernando Pessoa 149, 4600-079 Amarante, Portugal',
+    paymentsLastUpdate: 'Última atualização: Março de 2026',
 
     // Termos e Condições
     termsTitle: 'Termos e Condições',
@@ -630,8 +692,70 @@ every event becomes a memorable experience wrapped in elegance and authenticity.
     footerLegal: 'Legal Information',
     footerLegalTerms: 'Terms and Conditions',
     footerLegalPrivacy: 'Privacy Policy',
+    footerLegalPayments: 'Payments',
     footerLegalDisputes: 'Dispute Resolution',
     privacyPolicyLink: 'Privacy Policy',
+
+    // Payments, Cancellations and Refunds
+    paymentsTitle: 'Payments, Cancellations and Refunds',
+    paymentsSubtitle:
+      'Information on payment methods, booking confirmation, cancellations and refunds',
+    paymentsMethodsTitle: '1. Payment Methods',
+    paymentsMethods1:
+      'Casa do Fontão provides the payment methods displayed during the booking process.',
+    paymentsAvailableTitle: 'Currently available methods',
+    paymentsMethodMbway: 'MB Way',
+    paymentsMethodMultibanco: 'Multibanco Reference',
+    paymentsMethodCard: 'Credit/Debit Cards',
+    paymentsMethodGooglePay: 'Google Pay',
+    paymentsMethodApplePay: 'Apple Pay',
+    paymentsMethodPix: 'PIX (Brazil)',
+    paymentsMethodTpa: 'POS Terminals (In-person Payments)',
+    paymentsMethods2:
+      'The methods effectively available to the customer will always be presented before completing the booking.',
+    paymentsBookingTitle: '2. Booking Confirmation',
+    paymentsBooking1:
+      'The booking is considered submitted after filling in the requested details and will be confirmed under the terms shown in the booking process.',
+    paymentsBooking2:
+      'Whenever applicable, final booking confirmation depends on successful payment collection.',
+    paymentsBooking3:
+      'The customer will receive booking confirmation by direct contact and/or through the booking platform used.',
+    paymentsServiceTitle: '3. Service Provision',
+    paymentsService1:
+      'The accommodation service will be provided on the date or period selected by the customer at the time of booking.',
+    paymentsService2:
+      'In case of exceptional unavailability after booking, the customer will be informed as soon as possible and appropriate solutions will be presented, including, when applicable, the corresponding refund.',
+    paymentsCancellationTitle: '4. Cancellations',
+    paymentsCancellation1:
+      'The customer may request booking cancellation by contacting Casa do Fontão through the channels available on the website or by using the platform where the booking was made, when applicable.',
+    paymentsCancellation2:
+      'Specific cancellation conditions may vary depending on the rate, campaign, season or specific terms presented at the time of booking.',
+    paymentsCancellationNoteTitle: 'Important note',
+    paymentsCancellationNote1:
+      'Under applicable legal terms, the 14-day right of withdrawal may not apply to accommodation services when the contract provides for a specific date or period of performance.',
+    paymentsRefundTitle: '5. Refunds',
+    paymentsRefund1:
+      'When a refund is due, it will be made, whenever possible, through the same payment method used in the original transaction.',
+    paymentsRefund2:
+      'The refund will be processed within the maximum legally applicable deadline, except for duly justified exceptional situations.',
+    paymentsRefund3:
+      'If the customer requests a different refund method, any associated additional costs may not be borne by Casa do Fontão.',
+    paymentsPricesTitle: '6. Prices and Fees',
+    paymentsPrices1:
+      'The prices shown in the booking process correspond to the total value of the selected accommodation, including applicable taxes and fees, unless stated otherwise.',
+    paymentsPrices2:
+      'Before completing the booking, the customer will have access to the total amount payable, as well as any relevant information on additional costs that may apply.',
+    paymentsInvoiceTitle: '7. Invoicing',
+    paymentsInvoice1:
+      'After payment, the respective invoice document may be issued under the legally applicable terms.',
+    paymentsInvoice2:
+      'If you require an invoice with taxpayer number, you should request it at the time of booking or as soon as possible after payment.',
+    paymentsContactTitle: '8. Contact for Payment Questions',
+    paymentsContact1:
+      'For any questions related to payments, cancellations or refunds, the customer may contact Casa do Fontão directly:',
+    paymentsContact2:
+      '<strong>Email:</strong> geral.casadofontao@gmail.com<br /><strong>Phone:</strong> +351 926 448 247<br /><strong>Address:</strong> R. Fernando Pessoa 149, 4600-079 Amarante, Portugal',
+    paymentsLastUpdate: 'Last update: March 2026',
 
     // Terms and Conditions
     termsTitle: 'Terms and Conditions',
@@ -1023,8 +1147,70 @@ chaque événement devient une expérience mémorable empreinte d’élégance e
     footerLegal: 'Informations Légales',
     footerLegalTerms: 'Conditions Générales',
     footerLegalPrivacy: 'Politique de Confidentialité',
+    footerLegalPayments: 'Paiements',
     footerLegalDisputes: 'Résolution des Litiges',
     privacyPolicyLink: 'Politique de Confidentialité',
+
+    // Paiements, Annulations et Remboursements
+    paymentsTitle: 'Paiements, Annulations et Remboursements',
+    paymentsSubtitle:
+      'Informations sur les moyens de paiement, la confirmation des réservations, les annulations et les remboursements',
+    paymentsMethodsTitle: '1. Moyens de Paiement',
+    paymentsMethods1:
+      'Casa do Fontão met à disposition les moyens de paiement indiqués pendant le processus de réservation.',
+    paymentsAvailableTitle: 'Moyens actuellement disponibles',
+    paymentsMethodMbway: 'MB Way',
+    paymentsMethodMultibanco: 'Référence Multibanco',
+    paymentsMethodCard: 'Cartes de Crédit/Débit',
+    paymentsMethodGooglePay: 'Google Pay',
+    paymentsMethodApplePay: 'Apple Pay',
+    paymentsMethodPix: 'PIX (Brésil)',
+    paymentsMethodTpa: 'Terminaux de Paiement (Paiements en Présentiel)',
+    paymentsMethods2:
+      'Les moyens effectivement disponibles pour le client seront toujours présentés avant la finalisation de la réservation.',
+    paymentsBookingTitle: '2. Confirmation de la Réservation',
+    paymentsBooking1:
+      'La réservation est considérée comme soumise après le remplissage des données demandées et sera confirmée selon les conditions indiquées dans le processus de réservation.',
+    paymentsBooking2:
+      'Le cas échéant, la confirmation définitive de la réservation dépend du bon encaissement du paiement.',
+    paymentsBooking3:
+      'Le client recevra la confirmation de la réservation par contact direct et/ou via la plateforme de réservation utilisée.',
+    paymentsServiceTitle: '3. Prestation du Service',
+    paymentsService1:
+      'Le service d’hébergement sera fourni à la date ou pendant la période sélectionnée par le client au moment de la réservation.',
+    paymentsService2:
+      'En cas d’indisponibilité exceptionnelle après la réservation, le client sera informé dans les plus brefs délais et des solutions appropriées seront proposées, y compris, le cas échéant, le remboursement correspondant.',
+    paymentsCancellationTitle: '4. Annulations',
+    paymentsCancellation1:
+      'Le client peut demander l’annulation de la réservation en contactant Casa do Fontão par les moyens disponibles sur le site web ou en utilisant la plateforme où la réservation a été effectuée, le cas échéant.',
+    paymentsCancellation2:
+      'Les conditions concrètes d’annulation peuvent varier selon le tarif, la campagne, la période de l’année ou les conditions spécifiques présentées au moment de la réservation.',
+    paymentsCancellationNoteTitle: 'Note importante',
+    paymentsCancellationNote1:
+      'Conformément aux dispositions légales applicables, le droit de rétractation de 14 jours peut ne pas s’appliquer aux services d’hébergement lorsque le contrat prévoit une date ou une période d’exécution spécifique.',
+    paymentsRefundTitle: '5. Remboursements',
+    paymentsRefund1:
+      'Lorsqu’un remboursement est dû, il sera effectué, dans la mesure du possible, par le même moyen de paiement utilisé lors de la transaction initiale.',
+    paymentsRefund2:
+      'Le remboursement sera traité dans le délai maximum légalement applicable, sauf situations exceptionnelles dûment justifiées.',
+    paymentsRefund3:
+      'Si le client demande un moyen de remboursement différent, les éventuels coûts supplémentaires associés peuvent ne pas être pris en charge par Casa do Fontão.',
+    paymentsPricesTitle: '6. Prix et Taxes',
+    paymentsPrices1:
+      'Les prix présentés dans le processus de réservation correspondent à la valeur totale de l’hébergement sélectionné, incluant les taxes et impôts applicables, sauf indication contraire.',
+    paymentsPrices2:
+      'Avant la finalisation de la réservation, le client aura accès au montant total à payer ainsi qu’à toute information pertinente sur les coûts additionnels applicables.',
+    paymentsInvoiceTitle: '7. Facturation',
+    paymentsInvoice1:
+      'Après le paiement, le document de facturation correspondant pourra être émis, conformément aux dispositions légales applicables.',
+    paymentsInvoice2:
+      'Si vous souhaitez une facture avec numéro fiscal, vous devez la demander au moment de la réservation ou dès que possible après le paiement.',
+    paymentsContactTitle: '8. Contact pour les Questions de Paiement',
+    paymentsContact1:
+      'Pour toute question liée aux paiements, annulations ou remboursements, le client peut contacter directement Casa do Fontão :',
+    paymentsContact2:
+      '<strong>Email:</strong> geral.casadofontao@gmail.com<br /><strong>Téléphone:</strong> +351 926 448 247<br /><strong>Adresse:</strong> R. Fernando Pessoa 149, 4600-079 Amarante, Portugal',
+    paymentsLastUpdate: 'Dernière mise à jour: Mars 2026',
 
     // Termes et Conditions
     termsTitle: 'Conditions Générales',
@@ -1416,8 +1602,70 @@ cada evento se convierte en una experiencia memorable llena de elegancia y auten
     footerLegal: 'Información Legal',
     footerLegalTerms: 'Términos y Condiciones',
     footerLegalPrivacy: 'Política de Privacidad',
+    footerLegalPayments: 'Pagos',
     footerLegalDisputes: 'Resolución de Litigios',
     privacyPolicyLink: 'Política de Privacidad',
+
+    // Pagos, Cancelaciones y Reembolsos
+    paymentsTitle: 'Pagos, Cancelaciones y Reembolsos',
+    paymentsSubtitle:
+      'Información sobre métodos de pago, confirmación de reservas, cancelaciones y reembolsos',
+    paymentsMethodsTitle: '1. Métodos de Pago',
+    paymentsMethods1:
+      'Casa do Fontão pone a disposición los métodos de pago indicados durante el proceso de reserva.',
+    paymentsAvailableTitle: 'Métodos actualmente disponibles',
+    paymentsMethodMbway: 'MB Way',
+    paymentsMethodMultibanco: 'Referencia Multibanco',
+    paymentsMethodCard: 'Tarjetas de Crédito/Débito',
+    paymentsMethodGooglePay: 'Google Pay',
+    paymentsMethodApplePay: 'Apple Pay',
+    paymentsMethodPix: 'PIX (Brasil)',
+    paymentsMethodTpa: 'TPAs (Pagos Presenciales)',
+    paymentsMethods2:
+      'Los métodos efectivamente disponibles para el cliente se mostrarán siempre antes de finalizar la reserva.',
+    paymentsBookingTitle: '2. Confirmación de la Reserva',
+    paymentsBooking1:
+      'La reserva se considera enviada tras completar los datos solicitados y será confirmada según las condiciones indicadas durante el proceso de reserva.',
+    paymentsBooking2:
+      'Cuando corresponda, la confirmación definitiva de la reserva dependerá del cobro correcto del pago.',
+    paymentsBooking3:
+      'El cliente recibirá la confirmación de la reserva por contacto directo y/o a través de la plataforma de reserva utilizada.',
+    paymentsServiceTitle: '3. Prestación del Servicio',
+    paymentsService1:
+      'El servicio de alojamiento se prestará en la fecha o período seleccionado por el cliente en el momento de la reserva.',
+    paymentsService2:
+      'En caso de indisponibilidad excepcional después de la reserva, el cliente será informado con la mayor brevedad posible y se presentarán soluciones adecuadas, incluido, cuando corresponda, el respectivo reembolso.',
+    paymentsCancellationTitle: '4. Cancelaciones',
+    paymentsCancellation1:
+      'El cliente podrá solicitar la cancelación de la reserva, para lo cual deberá contactar con Casa do Fontão a través de los medios disponibles en el sitio web o utilizar la plataforma donde realizó la reserva, cuando corresponda.',
+    paymentsCancellation2:
+      'Las condiciones concretas de cancelación pueden variar según la tarifa, campaña, época del año o condiciones específicas presentadas en el momento de la reserva.',
+    paymentsCancellationNoteTitle: 'Nota importante',
+    paymentsCancellationNote1:
+      'Según la normativa legal aplicable, el derecho de desistimiento de 14 días puede no ser aplicable a servicios de alojamiento cuando el contrato prevea una fecha o período de ejecución específico.',
+    paymentsRefundTitle: '5. Reembolsos',
+    paymentsRefund1:
+      'Cuando corresponda un reembolso, este se efectuará, siempre que sea posible, mediante el mismo método de pago utilizado en la transacción inicial.',
+    paymentsRefund2:
+      'El reembolso se procesará dentro del plazo máximo legalmente aplicable, salvo situaciones excepcionales debidamente justificadas.',
+    paymentsRefund3:
+      'Si el cliente solicita un método de reembolso diferente, los posibles costes adicionales asociados podrán no ser asumidos por Casa do Fontão.',
+    paymentsPricesTitle: '6. Precios y Tasas',
+    paymentsPrices1:
+      'Los precios presentados en el proceso de reserva corresponden al valor total del alojamiento seleccionado, incluidos los impuestos y tasas aplicables, salvo indicación en contrario.',
+    paymentsPrices2:
+      'Antes de finalizar la reserva, el cliente tendrá acceso al importe total a pagar, así como a cualquier información relevante sobre costes adicionales que puedan aplicarse.',
+    paymentsInvoiceTitle: '7. Facturación',
+    paymentsInvoice1:
+      'Después del pago, podrá emitirse el correspondiente documento de facturación, según las disposiciones legales aplicables.',
+    paymentsInvoice2:
+      'Si desea factura con número de contribuyente, deberá solicitar su emisión en el momento de la reserva o lo antes posible después del pago.',
+    paymentsContactTitle: '8. Contacto para Cuestiones de Pago',
+    paymentsContact1:
+      'Para cualquier duda relacionada con pagos, cancelaciones o reembolsos, el cliente podrá contactar directamente con Casa do Fontão:',
+    paymentsContact2:
+      '<strong>Email:</strong> geral.casadofontao@gmail.com<br /><strong>Teléfono:</strong> +351 926 448 247<br /><strong>Dirección:</strong> R. Fernando Pessoa 149, 4600-079 Amarante, Portugal',
+    paymentsLastUpdate: 'Última actualización: Marzo de 2026',
 
     // Términos y Condiciones
     termsTitle: 'Términos y Condiciones',
