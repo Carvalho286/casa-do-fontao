@@ -315,7 +315,7 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../media/image_hero.jpg');
+  background-image: url('../media/image_hero.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
