@@ -32,6 +32,7 @@
         
         <nav id="main-nav">
           <a href="#essencia" data-i18n="home">A Casa</a>
+          <a href="#piscina" data-i18n="piscina">Piscina</a>
           <a href="#experiencias" data-i18n="experiences">Experiências</a>
           <a href="#quartos" data-i18n="rooms">Quartos</a>
           <a href="#eventos" data-i18n="events">Eventos</a>
@@ -57,8 +58,8 @@
         
         <div class="right-actions">
           <a
-            href="https://booking.roomraccoon.pt/casadofontao/pt"
-            target="_blank"
+            href="#"
+            id="btn-reservar-header"
             class="btn-small"
             data-i18n="bookNow"
             >Reservar</a
@@ -100,14 +101,68 @@
       </div>
     </section>
 
+    <!-- INTRODUÇÃO -->
+    <section id="essencia" class="introducao-section">
+      <div class="container introducao-container">
+        <h2 class="introducao-title">A Essência da Casa do Fontão</h2>
+        <p class="introducao-text">Casa de Charme com 6 quartos, capacidade para 16 pessoas, piscina panorâmica, cozinha equipada, eventos.</p>
+      </div>
+      <div class="introducao-features-full">
+        <img src="media/images/intro/dji_fly_20260423_143028_213_1776952196027_photo_optimized.jpg" alt="Diferenciador 2" />
+        <img src="media/images/intro/Cópia de Imagem WhatsApp 2025-09-14 às 19.29.07_473bffd6.jpg" alt="Diferenciador 1" />
+        <img src="media/images/intro/IMG_3008.jpg" alt="Diferenciador 3" />
+        <img src="media/images/intro/IMG_3044.jpg" alt="Diferenciador 4" /> 
+      </div>
+    </section>
+
+    <!-- PISCINA -->
+    <section id="piscina" class="piscina-section">
+      <div class="piscina-container">
+        <div class="piscina-text">
+          <p class="piscina-tag">
+            <img src="media/icons/sun.svg" alt="" class="piscina-icon" />
+            <span data-i18n="piscinaTag">Relaxamento e Lazer</span>
+          </p>
+          <h2 class="piscina-title" data-i18n="piscinaTitle">Piscina Panorâmica</h2>
+          <p class="piscina-desc" data-i18n="piscinaDesc">Mergulhe numa vista de tirar o fôlego. A nossa piscina panorâmica oferece um cenário deslumbrante, perfeito para dias de sol e relaxamento.</p>
+        </div>
+        <div class="piscina-bento-grid">
+          <div class="bento-wrapper bento-main">
+            <img src="media/images/pool/IMG_3005.jpg" alt="Piscina Panorâmica Principal" class="bento-img" />
+            <div class="bento-overlay">
+              <span data-i18n="piscinaVista">A Vista</span>
+            </div>
+          </div>
+          <div class="bento-wrapper bento-sub-1">
+            <img src="media/images/pool/IMG_3032.jpg" alt="Piscina Pôr do Sol" class="bento-img" />
+            <div class="bento-overlay">
+              <span data-i18n="piscinaSol">Dias de Sol</span>
+            </div>
+          </div>
+          <div class="bento-wrapper bento-sub-2">
+            <img src="media/images/pool/IMG_6951.jpg" alt="Piscina Relaxe" class="bento-img" />
+            <div class="bento-overlay">
+              <span data-i18n="piscinaTranquilidade">Tranquilidade</span>
+            </div>
+          </div>
+          <div class="bento-wrapper bento-sub-3">
+            <img src="media/images/pool/IMG_6957.jpg" alt="Piscina Férias" class="bento-img" />
+            <div class="bento-overlay">
+              <span data-i18n="piscinaLazer">Lazer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ESSÊNCIA -->
     <section id="essencia" class="essencia-section">
       <div class="essencia-container">
         <!-- Coluna esquerda: Fotos -->
         <div class="essencia-gallery">
           <img
-            src="media/images/essencia-1.jpg"
-            alt="Sala de leitura"
+            src="media/images/eventos.jpg"
+            alt="Piscina Panorâmica"
             class="essencia-img"
           />
           <img
@@ -618,7 +673,7 @@
       </div>
     </section>
     
-    <div class="elfsight-app-36f139eb-a29b-47df-ac40-9d3548a8a093" data-elfsight-app-lazy></div>
+    <!-- <div class="elfsight-app-36f139eb-a29b-47df-ac40-9d3548a8a093" data-elfsight-app-lazy></div> -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -681,6 +736,30 @@
         <p class="credits" data-i18n="footerCredits">Website desenvolvido por <a href="https://carvalho286.dev" target="_blank">Miguel Carvalho</a></p>
       </div>
     </footer>
+
+    <!-- MODAL RESERVAR -->
+    <div id="reservar-modal" class="reservar-modal hidden" role="dialog" aria-modal="true" aria-labelledby="reservar-title">
+      <div class="reservar-overlay"></div>
+      <div class="reservar-content">
+        <button id="close-reservar" class="close-btn">&times;</button>
+        <h2 id="reservar-title" class="reservar-title" data-i18n="chooseProperty">Escolha a Propriedade</h2>
+        
+        <div class="reservar-options">
+          <!-- Opção 1: Casa do Fontão -->
+          <a href="https://booking.roomraccoon.pt/casadofontao/pt" target="_blank" class="reservar-card fontao-card">
+            <h3>CASA DO FONTÃO</h3>
+            <p>Casa de Charme</p>
+          </a>
+          
+          <!-- Opção 2: Casa do Ribeirinho -->
+          <div class="reservar-card ribeirinho-card disabled" title="Em Breve">
+            <h3>CASA DO RIBEIRINHO</h3>
+            <p>Centro Histórico de Amarante</p>
+            <span class="badge-em-breve" data-i18n="comingSoon">Em Breve</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/lang.js?v=2"></script>
     <script src="js/script.js?v=2"></script>

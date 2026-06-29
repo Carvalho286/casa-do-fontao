@@ -626,3 +626,32 @@ if (document.readyState === 'loading') {
 } else {
   initExperienceCarousels();
 }
+
+// === RESERVAR MODAL ===
+const reservarBtn = document.getElementById("btn-reservar-header");
+const reservarModal = document.getElementById("reservar-modal");
+const closeReservar = document.getElementById("close-reservar");
+const reservarOverlay = document.querySelector(".reservar-overlay");
+
+if (reservarBtn && reservarModal) {
+  reservarBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    reservarModal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  });
+}
+
+function closeReservarModal() {
+  if (reservarModal) {
+    reservarModal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  }
+}
+
+if (closeReservar) {
+  closeReservar.addEventListener("click", closeReservarModal);
+}
+
+if (reservarOverlay) {
+  reservarOverlay.addEventListener("click", closeReservarModal);
+}
